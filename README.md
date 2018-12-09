@@ -13,11 +13,11 @@ To train and validate the network, this repo use the augmented PASCAL VOC 2012 d
 ## Training
 Make sure to look at the config.py and change it as you like, then run main.py
 Finally you will get the ckpt and log in checkpoint/ and log/
-'''
+```
 Run 
 tensorboard --logdir log 
 to see the training log.
-'''
+```
 
 ## TODO
 - [x] Unet, PSPNet, DeepLabV3+
