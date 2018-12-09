@@ -12,7 +12,7 @@ To train and validate the network, this repo use the augmented PASCAL VOC 2012 d
 
 ## Training
 Make sure to look at the config.py and change it as you like, then run main.py
-Finally you will get the ckpt and log in checkpoint/ and log/
+Finally you will get the ckpt and log in [checkpoint/](https://github.com/silkylove/Pytorch-ImageSegmentation/tree/master/checkpoint) and [log/](https://github.com/silkylove/Pytorch-ImageSegmentation/tree/master/log)
 
 ```
 Run 
