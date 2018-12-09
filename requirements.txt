@@ -1,0 +1,7 @@
+numpy==1.14.3
+torchvision==0.2.1
+torchsummary==1.4
+matplotlib==2.2.2
+torch==1.0.0
+Pillow==5.3.0
+tensorboardX==1.4
