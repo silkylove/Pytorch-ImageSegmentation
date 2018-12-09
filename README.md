@@ -24,7 +24,7 @@ Run tensorboard --logdir log to see the training log.
 - [ ] Deformable CNN
 - [ ] More datasets including some medical datasets, eg, COCO
 
-##Results untill now
+## Results untill now
 Now I had done the experiments on deeplabv3+ (one can get the training log under /log):
 Performance with 4 1080ti:
 Deeplabv3+ on VOC2012 with 16 batchsize and 30K iterations.
