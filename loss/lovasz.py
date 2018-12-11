@@ -28,12 +28,13 @@ class LovaszLoss(nn.Module):
 
     def forward(self, input, target, per_image=False):
         '''
-        :param input: should be the logits (after softmax)
+        :param input: should before the logits
         :param target:
         :param per_image:
         :return:
         '''
-        return self._loss(input, target, per_image=per_image, ignore=self.ignore_index)
+
+        return self._loss(F.softmax(input, 1), target, per_image=per_image, ignore=self.ignore_index)
 
 
 def lovasz_grad(gt_sorted):

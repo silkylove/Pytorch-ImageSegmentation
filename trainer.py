@@ -96,10 +96,7 @@ class Trainer(object):
 
             outs = self.model(imgs)
             if not isinstance(outs, tuple):
-                if self.config.loss != 'lovasz':
-                    loss = self.criterion(outs, targets)
-                else:
-                    loss = self.criterion(F.softmax(outs, dim=1), targets)
+                loss = self.criterion(outs, targets)
                 self.scores.update(targets.cpu().data.numpy(),
                                    outs.argmax(dim=1).cpu().data.numpy())
 
@@ -146,10 +143,7 @@ class Trainer(object):
 
                 outs = self.model(imgs)
 
-                if self.config.loss != 'lovasz':
-                    loss = self.criterion(outs, targets)
-                else:
-                    loss = self.criterion(F.softmax(outs, dim=1), targets)
+                loss = self.criterion(outs, targets)
 
                 self.scores.update(targets.cpu().data.numpy(),
                                    outs.argmax(dim=1).cpu().data.numpy())
