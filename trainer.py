@@ -103,7 +103,7 @@ class Trainer(object):
             elif len(outs) == 2:
                 # For pspnet outputs
                 try:
-                    loss = self.criterion([outs[0].argmax(dim=1), outs[1].argmax(dim=1)], targets)
+                    loss = self.criterion(outs, targets)
                     self.scores.update(targets.cpu().data.numpy(),
                                        outs[1].argmax(dim=1).cpu().data.numpy())
                 except:

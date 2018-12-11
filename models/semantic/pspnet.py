@@ -52,9 +52,10 @@ class PSPNet(nn.Module):
 
         x = self.pyramid_pooling(x)
         x = self.cbr_last(x)
-        aux = self.cbr_deepsup(aux)
-        x = F.interpolate(x, size=(h, w), mode='bilinear', align_corners=False)
+        x = F.interpolate(x, size=(h, w), mode='bilinear', align_corners=True)
         if self.training:
+            aux = self.cbr_deepsup(aux)
+            aux = F.interpolate(aux, size=(h, w), mode='bilinear', align_corners=True)
             return aux, x
         else:
             return x
