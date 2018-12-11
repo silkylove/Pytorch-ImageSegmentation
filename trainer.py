@@ -9,6 +9,7 @@ from datasets import get_loader
 from loss import LossSelector
 from models import ModelSelector
 from utils import ScoreMeter, AveMeter, Timer, patch_replication_callback
+from utils.visualization import decode_mask_seq
 from tensorboardX import SummaryWriter
 from torchvision.utils import make_grid
 
@@ -182,11 +183,11 @@ class Trainer(object):
     def summary_imgs(self, imgs, targets, outputs, epoch):
         grid_imgs = make_grid(imgs[:3].clone().cpu().data, nrow=3, normalize=True)
         self.writer.add_image('Image', grid_imgs, epoch)
-        grid_imgs = make_grid(self.datasets['val'].decode_mask_seq(outputs[:3].argmax(1).cpu().data.numpy(),
-                                                                   self.datasets['val'].labels_array),
+        grid_imgs = make_grid(decode_mask_seq(outputs[:3].argmax(1).cpu().data.numpy(),
+                                              self.datasets['val'].labels_array),
                               nrow=3, normalize=False, range=(0, 255))
         self.writer.add_image('Predicted mask', grid_imgs, epoch)
-        grid_imgs = make_grid(self.datasets['val'].decode_mask_seq(targets[:3].cpu().data.numpy(),
-                                                                   self.datasets['val'].labels_array),
+        grid_imgs = make_grid(decode_mask_seq(targets[:3].cpu().data.numpy(),
+                                              self.datasets['val'].labels_array),
                               nrow=3, normalize=False, range=(0, 255))
         self.writer.add_image('GT mask', grid_imgs, epoch)
