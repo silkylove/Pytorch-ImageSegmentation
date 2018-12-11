@@ -8,7 +8,7 @@ from utils import SyncBN2d
 
 
 class PSPNet(nn.Module):
-    def __init__(self, in_channels, num_classes, backend='resnet18', pool_scales=(1, 2, 3, 6), pretrained=True):
+    def __init__(self, in_channels, num_classes, backend='resnet18', pool_scales=(1, 2, 3, 6), pretrained='imagenet'):
         '''
         :param in_channels:
         :param num_classes:
@@ -22,7 +22,7 @@ class PSPNet(nn.Module):
         if hasattr(backend, 'low_features') and hasattr(backend, 'high_features') \
                 and hasattr(backend, 'lastconv_channel'):
             self.backend = backend
-        elif 'resnet' in backend:
+        elif 'resne' in backend:
             self.backend = ResnetBackend(backend, pretrained)
         else:
             raise NotImplementedError
@@ -48,8 +48,7 @@ class PSPNet(nn.Module):
 
     def forward(self, x):
         h, w = x.size()[2:]
-        aux = self.backend.low_features(x)
-        x = self.backend.high_features(aux)
+        aux, x = self.backend(x)
 
         x = self.pyramid_pooling(x)
         x = self.cbr_last(x)
@@ -62,24 +61,30 @@ class PSPNet(nn.Module):
 
 
 class ResnetBackend(nn.Module):
-    def __init__(self, backend='resnet18', pretrained=True):
+    def __init__(self, backend='resnet18', pretrained='imagenet'):
         '''
-        :param backend: resnet<>
+        :param backend: resnet<> or se_resnet<>
         '''
         super(ResnetBackend, self).__init__()
-        _all_resnet_models = ['resnet18', 'resnet34', 'resnet50', 'resnet101', 'resnet152']
+        _all_resnet_models = backbone._all_resnet_backbones
         if backend not in _all_resnet_models:
             raise NotImplementedError(f"{backend} must in {_all_resnet_models}")
 
-        self._backend_model = eval(f"backbone.{backend}(pretrained={pretrained})")
+        self._backend_model = eval(f"backbone.{backend}(pretrained=pretrained)")
 
-        self.low_features = nn.Sequential(self._backend_model.conv1,
-                                          self._backend_model.bn1,
-                                          self._backend_model.relu,
-                                          self._backend_model.maxpool,
-                                          self._backend_model.layer1,
-                                          self._backend_model.layer2,
-                                          self._backend_model.layer3)
+        if 'se' in backend:
+            self.low_features = nn.Sequential(self._backend_model.layer0,
+                                              self._backend_model.layer1,
+                                              self._backend_model.layer2,
+                                              self._backend_model.layer3)
+        else:
+            self.low_features = nn.Sequential(self._backend_model.conv1,
+                                              self._backend_model.bn1,
+                                              self._backend_model.relu,
+                                              self._backend_model.maxpool,
+                                              self._backend_model.layer1,
+                                              self._backend_model.layer2,
+                                              self._backend_model.layer3)
 
         self.high_features = nn.Sequential(self._backend_model.layer4)
 
@@ -88,12 +93,18 @@ class ResnetBackend(nn.Module):
         else:
             self.lastconv_channel = 512 * 4
 
+    def forward(self, x):
+        low_features = self.low_features(x)
+        x = self.high_features(low_features)
+        return low_features, x
+
 
 if __name__ == '__main__':
     from torchsummary import summary
 
-    pspnet = PSPNet(in_channels=3, num_classes=21, backend='resnet18', pool_scales=(1, 2, 3, 6)).cuda()
+    pspnet = PSPNet(in_channels=3, num_classes=21, backend='se_resnext50_32x4d', pool_scales=(1, 2, 3, 6)).cuda()
     print(summary(pspnet, [3, 224, 224]))
+    print('Total params: ', sum(p.numel() for p in pspnet.parameters() if p.requires_grad))
     x = torch.randn(2, 3, 224, 224)
     out_aux, out = pspnet(x.cuda())
     print(out_aux.size())

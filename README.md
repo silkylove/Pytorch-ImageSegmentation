@@ -36,16 +36,11 @@ Deeplabv3+ on VOC2012 with 16 batchsize and 30K iterations.
 
 | Backbone | train/val OS| mIoU paper| mIoU repo|
 | :--------| :----------:|:---------:|:--------:|
-| Resnet101|      16     |  78.85%   |  77.95%  |
+| Resnet101|      16     |  78.85%   |  78.04%  |
 
 ![Results](pictures/train_miou.png)
 ![Results](pictures/val_miou.png)
 ![Results](pictures/r1.png)
-![Results](pictures/r01.png)
-![Results](pictures/r02.png)
-![Results](pictures/r03.png)
-![Results](pictures/r04.png)
-![Results](pictures/r05.png)
 
 ## Requirements
 Python(3.6) and Pytorch(1.0.0) is necessary before running the scripts.

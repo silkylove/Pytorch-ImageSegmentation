@@ -46,6 +46,7 @@ if __name__ == '__main__':
 
     unet = UNet(in_channels=3, num_classes=21, filter_scale=2).cuda()
     print(summary(unet, [3, 224, 224]))
+    print('Total params: ', sum(p.numel() for p in unet.parameters() if p.requires_grad))
     x = torch.randn(1, 3, 224, 224)
     out = unet(x.cuda())
     print(out.size())

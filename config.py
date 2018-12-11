@@ -3,15 +3,22 @@ import os
 import logging
 import argparse
 
+'''
+All backbones
+['resnet18', 'resnet34', 'resnet50', 'resnet101',
+ 'resnet152', 'senet154', 'se_resnet50', 'se_resnet101',
+ 'se_resnet152', 'se_resnext50_32x4d', 'se_resnext101_32x4d']
+'''
+
 unet_params = {'filter_scale': 1}
 
 deeplabv3_params = {'backend': 'resnet101',
                     'os': 16,
-                    'pretrained': True}
+                    'pretrained': 'imagenet'}
 
 pspnet_params = {'backend': 'resnet18',
                  'pool_scales': (1, 2, 3, 6),
-                 'pretrained': True}
+                 'pretrained': 'imagenet'}
 
 ce_params = {'weight': None, 'ignore_index': 255}
 dice_params = {'smooth': 1}
@@ -40,7 +47,7 @@ parse.add_argument('--batch_size', default=16 * 1, type=int)
 parse.add_argument('--distributed', default=True, type=bool)
 parse.add_argument('--gpuid', default='0,1,2,3', type=str)
 parse.add_argument('--num_workers', default=8, type=int)
-parse.add_argument('--ckpt_dir', default='./checkpoint_1/')
+parse.add_argument('--ckpt_dir', default='./checkpoint/')
 parse.add_argument('--resume', default=False, help='resume from checkpoint', type=bool)
 
 parse.add_argument('--image_size', default=513, type=int)
@@ -50,7 +57,7 @@ parse.add_argument('--train_list', default='/home/yhuangcc/data/VOC2012/list/tra
 parse.add_argument('--val_list', default='/home/yhuangcc/data/VOC2012/list/val.txt')
 parse.add_argument('--label_file', default='/home/yhuangcc/ImageSegmentation/datasets/voc/labels')
 
-log_dir = './log_1/'
+log_dir = './log/'
 parse.add_argument('--log_dir', default=log_dir)
 if not os.path.exists(log_dir):
     os.makedirs(log_dir)
