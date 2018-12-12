@@ -30,13 +30,19 @@ to see the training log.
 - [ ] More datasets including some medical datasets, eg, COCO
 
 ## Results untill now
-Now I had done the experiments on deeplabv3+ (one can get the training log under /log):
+Now I had done the experiments on deeplabv3+ and pspnet (one can get the training log under [ckpt](https://github.com/silkylove/Pytorch-ImageSegmentation/tree/master/checkpoints/)):
 Performance with 4 1080ti:
-Deeplabv3+ on VOC2012 with 16 batchsize and 30K iterations.
+Deeplabv3+ on VOC2012 validation with 16 batchsize and 30K iterations in 12 hours.
 
 | Backbone | train/val OS| mIoU paper| mIoU repo|
 | :--------| :----------:|:---------:|:--------:|
 | Resnet101|      16     |  78.85%   |  78.04%  |
+
+PSPNet on VOC2012 validation with 16 batchsize and 30K iterations in 10 hours.
+
+| Backbone | mIoU paper| mIoU repo|
+| :--------|:---------:|:--------:|
+| Resnet101|     --    |  77.61%  |
 
 ![Results](pictures/train_miou.png)
 ![Results](pictures/val_miou.png)

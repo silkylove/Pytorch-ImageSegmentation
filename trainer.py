@@ -26,7 +26,7 @@ class Trainer(object):
         self.save_config(config)
         self.timer = Timer()
 
-        self.writer = SummaryWriter(log_dir=config.log_dir)
+        self.writer = SummaryWriter(log_dir=config.ckpt_dir)
 
         self.lr = config.lr
         self.datasets, self.loaders = get_loader(config)

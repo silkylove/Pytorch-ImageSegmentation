@@ -8,7 +8,7 @@ logger = logging.getLogger('InfoLog')
 
 
 def main(config):
-    logger.info('***START TRAINING IMAGE SEGMENTATION***')
+    logger.info(f'***START TRAINING {config.model}***'.upper())
     trainer = Trainer(config)
     trainer.train_and_val()
 

@@ -1,0 +1,57 @@
+{
+    "model_params": {
+        "unet": {
+            "filter_scale": 1
+        },
+        "deeplabv3+": {
+            "backend": "resnet101",
+            "os": 16,
+            "pretrained": "imagenet"
+        },
+        "pspnet": {
+            "backend": "resnet101",
+            "pool_scales": [
+                1,
+                2,
+                3,
+                6
+            ],
+            "pretrained": "imagenet"
+        }
+    },
+    "loss_params": {
+        "ce": {
+            "weight": null,
+            "ignore_index": 255
+        },
+        "dice": {
+            "smooth": 1
+        },
+        "focal": {
+            "weight": null,
+            "gamma": 2,
+            "alpha": 0.5
+        },
+        "lovasz": {
+            "multiclasses": true
+        }
+    },
+    "model": "pspnet",
+    "loss": "ce",
+    "lr": 0.01,
+    "max_iters": 30000,
+    "epochs": null,
+    "batch_size": 16,
+    "distributed": true,
+    "gpuid": "0,1,2,3",
+    "num_workers": 8,
+    "ckpt_dir": "./checkpoint_pspnet/",
+    "resume": false,
+    "image_size": 513,
+    "in_channels": 3,
+    "image_root": "/home/yhuangcc/data/VOC2012/",
+    "train_list": "/home/yhuangcc/data/VOC2012/list/train_aug.txt",
+    "val_list": "/home/yhuangcc/data/VOC2012/list/val.txt",
+    "label_file": "/home/yhuangcc/ImageSegmentation/datasets/voc/labels",
+    "log_dir": "./log_pspnet/"
+}
