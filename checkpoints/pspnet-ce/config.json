@@ -3,7 +3,7 @@
         "unet": {
             "filter_scale": 1
         },
-        "deeplabv3+": {
+        "dlv3plus": {
             "backend": "resnet101",
             "os": 16,
             "pretrained": "imagenet"

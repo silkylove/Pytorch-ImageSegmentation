@@ -37,10 +37,12 @@ class DeepLabv3_plus(nn.Module):
                                                 self.aspp_out_channel, kernel_size=3, padding=1, bias=False),
                                       SyncBN2d(self.aspp_out_channel),
                                       nn.ReLU(inplace=True),
+                                      nn.Dropout(.5),
                                       nn.Conv2d(self.aspp_out_channel, self.aspp_out_channel,
                                                 kernel_size=3, padding=1, bias=False),
                                       SyncBN2d(self.aspp_out_channel),
                                       nn.ReLU(inplace=True),
+                                      nn.Dropout(.1),
                                       nn.Conv2d(self.aspp_out_channel, self.num_classes, kernel_size=1))
 
     def forward(self, x):

@@ -3,7 +3,7 @@
         "unet": {
             "filter_scale": 1
         },
-        "deeplabv3+": {
+        "dlv3plus": {
             "backend": "resnet101",
             "os": 16,
             "pretrained": true
@@ -36,7 +36,7 @@
             "multiclasses": true
         }
     },
-    "model": "deeplabv3+",
+    "model": "dlv3plus",
     "loss": "ce",
     "lr": 0.01,
     "max_iters": 30000,

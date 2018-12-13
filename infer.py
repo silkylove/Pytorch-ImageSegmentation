@@ -1,4 +1,5 @@
 # -*- coding: utf-8 -*-
+import os
 import time
 import json
 import torch
@@ -12,17 +13,18 @@ import matplotlib.pyplot as plt
 
 
 @click.command()
-@click.option('--img_path', default='/home/yhuangcc/data/VOC2012/JPEGImages/2007_000032.jpg',
+@click.option('--img_path', default='../data/VOC2012/JPEGImages/2007_000032.jpg',
               prompt='Your image path:', help='image path')
-@click.option('--ckpt_path', default='./checkpoint_deeplabv3/ckpt.pt',
-              prompt='Your model path:', help='model ckpt path')
-@click.option('--config_path', default='./checkpoint_deeplabv3/config.json',
-              prompt='Your config path:', help='pre-config path')
+@click.option('--ckpt_path', default='./checkpoints/dlv3plus-ce/',
+              prompt='Your model and config path:', help='model config path')
 @click.option('--use_gpu', default=[1], prompt='use gpu or not', help='gpu')
-def main(img_path, ckpt_path, config_path, use_gpu):
+def main(img_path, ckpt_path, use_gpu):
     class Config(object):
         def __init__(self, j):
             self.__dict__ = json.load(j)
+
+    config_path = os.path.join(ckpt_path, 'config.json')
+    ckpt_path = os.path.join(ckpt_path, 'ckpt.pt')
 
     config = Config(open(config_path, 'r'))
     label_file = config.label_file

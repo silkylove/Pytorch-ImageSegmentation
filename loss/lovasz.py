@@ -26,7 +26,7 @@ class LovaszLoss(nn.Module):
             self._loss = lovasz_hinge
         self.ignore_index = ignore
 
-    def forward(self, input, target, per_image=False):
+    def forward(self, input, target, per_image=True):
         '''
         :param input: should before the logits
         :param target:
