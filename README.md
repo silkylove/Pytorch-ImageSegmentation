@@ -41,6 +41,7 @@ The pretrained model can be got from [deeplabv3+](https://drive.google.com/open?
 
 PSPNet on VOC2012 validation with 16 batchsize and 30K iterations in 10 hours.
 The pretrained model can be got from [pspnet](https://drive.google.com/open?id=1sp4U6opqxlGIeBVC92MSp2jq_Ig7VhvQ)
+
 | Backbone | mIoU paper| mIoU repo|
 | :--------|:---------:|:--------:|
 | Resnet101|     --    |  77.61%  |
