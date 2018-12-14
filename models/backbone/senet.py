@@ -321,9 +321,9 @@ class SENet(nn.Module):
             downsample_kernel_size=downsample_kernel_size,
             downsample_padding=downsample_padding
         )
-        # self.avg_pool = nn.AvgPool2d(7, stride=1)
-        # self.dropout = nn.Dropout(dropout_p) if dropout_p is not None else None
-        # self.last_linear = nn.Linear(512 * block.expansion, num_classes)
+        self.avg_pool = nn.AvgPool2d(7, stride=1)
+        self.dropout = nn.Dropout(dropout_p) if dropout_p is not None else None
+        self.last_linear = nn.Linear(512 * block.expansion, num_classes)
 
     def _make_layer(self, block, planes, blocks, groups, reduction, stride=1,
                     downsample_kernel_size=1, downsample_padding=0):
@@ -353,17 +353,17 @@ class SENet(nn.Module):
         x = self.layer4(x)
         return x
 
-    # def logits(self, x):
-    #     x = self.avg_pool(x)
-    #     if self.dropout is not None:
-    #         x = self.dropout(x)
-    #     x = x.view(x.size(0), -1)
-    #     x = self.last_linear(x)
-    #     return x
+    def logits(self, x):
+        x = self.avg_pool(x)
+        if self.dropout is not None:
+            x = self.dropout(x)
+        x = x.view(x.size(0), -1)
+        x = self.last_linear(x)
+        return x
 
     def forward(self, x):
         x = self.features(x)
-        # x = self.logits(x)
+        x = self.logits(x)
         return x
 
     def _load_pretrained_model(self, pretrain_dict):

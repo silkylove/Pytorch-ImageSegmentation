@@ -60,6 +60,24 @@ class PSPNet(nn.Module):
         else:
             return x
 
+    # def get_1x_lr_params(self):
+    #     modules = [self.backend]
+    #     for i in range(len(modules)):
+    #         for m in modules[i].named_modules():
+    #             if isinstance(m[1], nn.Conv2d):
+    #                 for p in m[1].parameters():
+    #                     if p.requires_grad:
+    #                         yield p
+    #
+    # def get_10x_lr_params(self):
+    #     modules = [self.pyramid_pooling, self.cbr_deepsup, self.cbr_last]
+    #     for i in range(len(modules)):
+    #         for m in modules[i].named_modules():
+    #             if isinstance(m[1], nn.Conv2d):
+    #                 for p in m[1].parameters():
+    #                     if p.requires_grad:
+    #                         yield p
+
 
 class ResnetBackend(nn.Module):
     def __init__(self, backend='resnet18', pretrained='imagenet'):
@@ -71,23 +89,23 @@ class ResnetBackend(nn.Module):
         if backend not in _all_resnet_models:
             raise NotImplementedError(f"{backend} must in {_all_resnet_models}")
 
-        self._backend_model = eval(f"backbone.{backend}(pretrained=pretrained)")
+        _backend_model = eval(f"backbone.{backend}(pretrained=pretrained)")
 
         if 'se' in backend:
-            self.low_features = nn.Sequential(self._backend_model.layer0,
-                                              self._backend_model.layer1,
-                                              self._backend_model.layer2,
-                                              self._backend_model.layer3)
+            self.low_features = nn.Sequential(_backend_model.layer0,
+                                              _backend_model.layer1,
+                                              _backend_model.layer2,
+                                              _backend_model.layer3)
         else:
-            self.low_features = nn.Sequential(self._backend_model.conv1,
-                                              self._backend_model.bn1,
-                                              self._backend_model.relu,
-                                              self._backend_model.maxpool,
-                                              self._backend_model.layer1,
-                                              self._backend_model.layer2,
-                                              self._backend_model.layer3)
+            self.low_features = nn.Sequential(_backend_model.conv1,
+                                              _backend_model.bn1,
+                                              _backend_model.relu,
+                                              _backend_model.maxpool,
+                                              _backend_model.layer1,
+                                              _backend_model.layer2,
+                                              _backend_model.layer3)
 
-        self.high_features = nn.Sequential(self._backend_model.layer4)
+        self.high_features = nn.Sequential(_backend_model.layer4)
 
         if backend in ['resnet18', 'resnet34']:
             self.lastconv_channel = 512
