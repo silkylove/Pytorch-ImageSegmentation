@@ -86,7 +86,7 @@ class ResnetBackend(nn.Module):
         if backend not in _all_resnet_models:
             raise Exception(f"{backend} must in {_all_resnet_models}")
 
-        _backend_model = eval(f"backbone.{backend}(pretrained=pretrained)")
+        _backend_model = backbone.__dict__[backend](pretrained=pretrained)
         if 'se' in backend:
             self.low_features = nn.Sequential(_backend_model.layer0,
                                               _backend_model.layer1)
@@ -116,7 +116,7 @@ class ResnetBackend(nn.Module):
 if __name__ == '__main__':
     from torchsummary import summary
 
-    deeplabv3_ = DeepLabv3_plus(in_channels=3, num_classes=21, backend='se_resnext50_32x4d', os=8).cuda()
+    deeplabv3_ = DeepLabv3_plus(in_channels=3, num_classes=21, backend='resnet101', os=16).cuda()
     print(summary(deeplabv3_, [3, 224, 224]))
     print('Total params: ', sum(p.numel() for p in deeplabv3_.parameters() if p.requires_grad))
     x = torch.randn(2, 3, 224, 224)

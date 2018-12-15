@@ -12,6 +12,9 @@ All backbones
 
 unet_params = {'filter_scale': 1}
 
+unet_ae_params = {'backend': 'resnet101',
+                  'pretrained': 'imagenet'}
+
 deeplabv3_params = {'backend': 'resnet101',
                     'os': 16,
                     'pretrained': 'imagenet'}
@@ -28,6 +31,7 @@ lovasz_params = {'multiclasses': True}
 parse = argparse.ArgumentParser(description='ImageSegmentation')
 
 parse.add_argument('--model_params', default={'unet': unet_params,
+                                              'unet_ae': unet_ae_params,
                                               'dlv3plus': deeplabv3_params,
                                               'pspnet': pspnet_params})
 
@@ -36,7 +40,7 @@ parse.add_argument('--loss_params', default={'ce': ce_params,
                                              'focal': focal_params,
                                              'lovasz': lovasz_params})
 
-parse.add_argument('--model', default='dlv3plus', choices=['unet', 'dlv3plus', 'pspnet'], type=str)
+parse.add_argument('--model', default='unet_ae', choices=['unet', 'unet_ae', 'dlv3plus', 'pspnet'], type=str)
 parse.add_argument('--loss', default='ce', choices=['ce', 'dice', 'focal', 'lovasz'], type=str)
 parse.add_argument('--lr', default=1e-2, type=float)
 # parse.add_argument('--lr_decay_step', default=[30, 40], type=list)
@@ -50,7 +54,7 @@ parse.add_argument('--num_workers', default=8, type=int)
 parse.add_argument('--ckpt_dir', default='./checkpoints/')
 parse.add_argument('--resume', default=False, help='resume from checkpoint', type=bool)
 
-parse.add_argument('--image_size', default=513, type=int)
+parse.add_argument('--image_size', default=256, type=int)
 parse.add_argument('--in_channels', default=3, type=int)
 parse.add_argument('--image_root', default='/home/yhuangcc/data/VOC2012/')
 parse.add_argument('--train_list', default='/home/yhuangcc/data/VOC2012/list/train_aug.txt')

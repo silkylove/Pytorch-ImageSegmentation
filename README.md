@@ -24,7 +24,7 @@ to see the training log.
 - [x] Unet, PSPNet, DeepLabV3+
 - [x] Resnet backbones
 - [x] VOC2012 dataset
-- [ ] More models including Unet-like Resnet based AutoEncoder ...
+- [x] More models including Unet-like Resnet based AutoEncoder ...
 - [ ] More backbones including scSE-ResneXt101, Xception and Mobile net
 - [ ] Deformable CNN
 - [ ] More datasets including some medical datasets, eg, COCO
@@ -45,6 +45,13 @@ The pretrained model can be got from [pspnet](https://drive.google.com/open?id=1
 | Backbone | mIoU paper| mIoU repo|
 | :--------|:---------:|:--------:|
 | Resnet101|     --    |  77.61%  |
+
+Resnet101 based Unet (imgsize 256) on VOC2012 validation with 16 batchsize and 30K iterations in 10 hours.
+The pretrained model can be got from [unet_ae](https://drive.google.com/open?id=1Sj_D3sDSZjXxwagUp_yVpHdp4G5LA_Jl)
+
+| Backbone | mIoU repo|
+| :--------|:--------:|
+| Resnet101|  74.77%  |
 
 ![Results](pictures/train_miou.png)
 ![Results](pictures/val_miou.png)

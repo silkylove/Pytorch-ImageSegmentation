@@ -89,7 +89,7 @@ class ResnetBackend(nn.Module):
         if backend not in _all_resnet_models:
             raise NotImplementedError(f"{backend} must in {_all_resnet_models}")
 
-        _backend_model = eval(f"backbone.{backend}(pretrained=pretrained)")
+        _backend_model = backbone.__dict__[backend](pretrained=pretrained)
 
         if 'se' in backend:
             self.low_features = nn.Sequential(_backend_model.layer0,
