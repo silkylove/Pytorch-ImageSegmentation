@@ -48,3 +48,16 @@ class SCSEBlock(nn.Module):
         spa_se = self.spatial_se(x)
         spa_se = torch.mul(x, spa_se)
         return torch.add(chn_se, 1, spa_se)
+
+#
+# class MyBlock(nn.Module):
+#     def __init__(self, channel):
+#         super(MyBlock, self).__init__()
+#
+#         self.se = nn.Sequential(nn.Conv2d(channel, channel, kernel_size=3,
+#                                           stride=1, padding=1, bias=False),
+#                                 nn.Sigmoid())
+#
+#     def forward(self, x):
+#         y = self.se(x)
+#         return torch.mul(x, y)

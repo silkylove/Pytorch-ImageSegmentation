@@ -55,7 +55,7 @@ def main(img_path, ckpt_path, use_gpu):
     else:
         ckpt = torch.load(ckpt_path, 'cpu')['net']
 
-    model.load_state_dict(ckpt)
+    model.load_state_dict(ckpt, strict=False)
     model.eval()
     start = time.time()
     output = model(input.unsqueeze(0))
