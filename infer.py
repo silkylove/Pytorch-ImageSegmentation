@@ -30,7 +30,7 @@ def main(img_path, img_size, ckpt_path, use_gpu):
 
     config = Config(open(config_path, 'r'))
     label_file = config.label_file
-    labels = np.loadtxt(label_file, dtype=np.object)
+    labels = np.loadtxt(label_file, dtype=np.object, delimiter=',')
     labels_array = labels[:, :3].astype(int)
     labels_name = labels[:, 3].tolist()
 
