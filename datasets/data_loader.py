@@ -18,7 +18,7 @@ class ImgSegDataset(Dataset):
         '''
 
         self.root = root
-        labels = np.loadtxt(label_file, dtype=np.object)
+        labels = np.loadtxt(label_file, dtype=np.object, delimiter=',')
         self.labels_array = labels[:, :3].astype(int)
         self.labels_name = labels[:, 3].tolist()
         self.n_classes = len(self.labels_name)
