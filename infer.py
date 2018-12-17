@@ -15,10 +15,11 @@ import matplotlib.pyplot as plt
 @click.command()
 @click.option('--img_path', default='../data/VOC2012/JPEGImages/2007_000032.jpg',
               prompt='Your image path:', help='image path')
+@click.option('--img_size', default=513, prompt='Your input image size:', help='input size')
 @click.option('--ckpt_path', default='./checkpoints/dlv3plus-ce/',
               prompt='Your model and config path:', help='model config path')
 @click.option('--use_gpu', default=[1], prompt='use gpu or not', help='gpu')
-def main(img_path, ckpt_path, use_gpu):
+def main(img_path, img_size, ckpt_path, use_gpu):
     class Config(object):
         def __init__(self, j):
             self.__dict__ = json.load(j)
@@ -35,7 +36,7 @@ def main(img_path, ckpt_path, use_gpu):
     transform = transforms.Compose([transforms.ToTensor(),
                                     transforms.Normalize((0.485, 0.456, 0.406),
                                                          (0.229, 0.224, 0.225))])
-    size = config.image_size
+    size = config.image_size if img_size is None else int(img_size)
     if isinstance(size, int):
         size = (int(size), int(size))
     img = Image.open(img_path).convert('RGB')
