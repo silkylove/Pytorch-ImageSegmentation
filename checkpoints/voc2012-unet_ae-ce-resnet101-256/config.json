@@ -3,20 +3,24 @@
         "unet": {
             "filter_scale": 1
         },
+        "unet_ae": {
+            "backend": "resnet101",
+            "pretrained": "imagenet"
+        },
         "dlv3plus": {
             "backend": "resnet101",
             "os": 16,
-            "pretrained": true
+            "pretrained": "imagenet"
         },
         "pspnet": {
-            "backend": "resnet18",
+            "backend": "resnet101",
             "pool_scales": [
                 1,
                 2,
                 3,
                 6
             ],
-            "pretrained": true
+            "pretrained": "imagenet"
         }
     },
     "loss_params": {
@@ -36,7 +40,7 @@
             "multiclasses": true
         }
     },
-    "model": "dlv3plus",
+    "model": "unet_ae",
     "loss": "ce",
     "lr": 0.01,
     "max_iters": 30000,
@@ -45,13 +49,13 @@
     "distributed": true,
     "gpuid": "0,1,2,3",
     "num_workers": 8,
-    "ckpt_dir": "./checkpoint_1/",
+    "ckpt_dir": "./checkpoints/unet_ae-ce",
     "resume": false,
-    "image_size": 513,
+    "image_size": 256,
     "in_channels": 3,
+    "data_type": "voc2012",
     "image_root": "/home/yhuangcc/data/VOC2012/",
     "train_list": "/home/yhuangcc/data/VOC2012/list/train_aug.txt",
     "val_list": "/home/yhuangcc/data/VOC2012/list/val.txt",
-    "label_file": "/home/yhuangcc/ImageSegmentation/datasets/voc/labels",
-    "log_dir": "./log_1/"
+    "label_file": "/home/yhuangcc/ImageSegmentation/datasets/voc/labels"
 }

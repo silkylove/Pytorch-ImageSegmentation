@@ -56,15 +56,25 @@ parse.add_argument('--resume', default=False, help='resume from checkpoint', typ
 
 parse.add_argument('--image_size', default=513, type=int)
 parse.add_argument('--in_channels', default=3, type=int)
+
+### VOC2012 path config
+parse.add_argument('--data_type', default='voc2012', choices=['voc2012', 'cityscapes', 'coco'])
 parse.add_argument('--image_root', default='/home/yhuangcc/data/VOC2012/')
 parse.add_argument('--train_list', default='/home/yhuangcc/data/VOC2012/list/train_aug.txt')
 parse.add_argument('--val_list', default='/home/yhuangcc/data/VOC2012/list/val.txt')
 parse.add_argument('--label_file', default='/home/yhuangcc/ImageSegmentation/datasets/voc/labels')
 
+## CityScapes path config
+# parse.add_argument('--data_type', default='cityscapes', choices=['voc2012', 'cityscapes', 'coco'])
+# parse.add_argument('--image_root', default='/home/yhuangcc/data/cityscapes/')
+# parse.add_argument('--train_list', default='/home/yhuangcc/data/cityscapes/train.txt')
+# parse.add_argument('--val_list', default='/home/yhuangcc/data/cityscapes/val.txt')
+# parse.add_argument('--label_file', default='/home/yhuangcc/ImageSegmentation/datasets/cityscapes/labels')
+
 
 def get_config():
     config, unparsed = parse.parse_known_args()
-    config.ckpt_dir = os.path.join(config.ckpt_dir, f"{config.model}-{config.loss}")
+    config.ckpt_dir = os.path.join(config.ckpt_dir, f"{config.data_type}-{config.model}-{config.loss}-1")
     if not os.path.exists(config.ckpt_dir):
         os.makedirs(config.ckpt_dir)
     logger = logging.getLogger("InfoLog")

@@ -99,7 +99,8 @@ class ASPPBlock(nn.Module):
         self.aspp_catdown = nn.Sequential(
             OrderedDict([('conv_down', nn.Conv2d(5 * out_channel, out_channel, kernel_size=1, bias=False)),
                          ('bn_down', SyncBN2d(out_channel)),
-                         ('relu_down', nn.ReLU(inplace=True))])
+                         ('relu_down', nn.ReLU(inplace=True)),
+                         ('drop_out', nn.Dropout(.1))])
         )
 
     def forward(self, x):

@@ -49,9 +49,9 @@
     "resume": false,
     "image_size": 513,
     "in_channels": 3,
+    "data_type": "voc2012",
     "image_root": "/home/yhuangcc/data/VOC2012/",
     "train_list": "/home/yhuangcc/data/VOC2012/list/train_aug.txt",
     "val_list": "/home/yhuangcc/data/VOC2012/list/val.txt",
-    "label_file": "/home/yhuangcc/ImageSegmentation/datasets/voc/labels",
-    "log_dir": "./log_pspnet/"
+    "label_file": "/home/yhuangcc/ImageSegmentation/datasets/voc/labels"
 }

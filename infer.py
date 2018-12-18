@@ -17,7 +17,7 @@ import matplotlib.pyplot as plt
               prompt='Your image path:', help='image path')
 @click.option('--img_size', default=-1, type=int,
               prompt='Your input image size:', help='input size')
-@click.option('--ckpt_path', default='./checkpoints/dlv3plus-ce/',
+@click.option('--ckpt_path', default='./checkpoints/voc2012-dlv3plus-ce/',
               prompt='Your model and config path:', help='model config path')
 @click.option('--use_gpu', default=[1], prompt='use gpu or not', help='gpu')
 def main(img_path, img_size, ckpt_path, use_gpu):
