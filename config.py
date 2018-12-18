@@ -54,7 +54,8 @@ parse.add_argument('--num_workers', default=8, type=int)
 parse.add_argument('--ckpt_dir', default='./checkpoints/')
 parse.add_argument('--resume', default=False, help='resume from checkpoint', type=bool)
 
-parse.add_argument('--image_size', default=513, type=int)
+parse.add_argument('--train_image_size', default=513, type=int)
+parse.add_argument('--val_image_size', default=(513, 513),help='h,w')
 parse.add_argument('--in_channels', default=3, type=int)
 
 ### VOC2012 path config
@@ -63,6 +64,7 @@ parse.add_argument('--image_root', default='/home/yhuangcc/data/VOC2012/')
 parse.add_argument('--train_list', default='/home/yhuangcc/data/VOC2012/list/train_aug.txt')
 parse.add_argument('--val_list', default='/home/yhuangcc/data/VOC2012/list/val.txt')
 parse.add_argument('--label_file', default='/home/yhuangcc/ImageSegmentation/datasets/voc/labels')
+
 
 ## CityScapes path config
 # parse.add_argument('--data_type', default='cityscapes', choices=['voc2012', 'cityscapes', 'coco'])

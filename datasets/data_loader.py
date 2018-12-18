@@ -102,18 +102,19 @@ class CocoDataset(Dataset):
 
 
 def get_loader(config):
-    size = config.image_size
+    train_size = config.train_image_size
+    val_size=config.val_image_size
     mean = (0.485, 0.456, 0.406)
     std = (0.229, 0.224, 0.225)
     training_transforms = st.Compose([st.RandomHorizontallyFlip(),
                                       st.RandomGaussianBlur(),
                                       st.RandomRotate(degree=5),
                                       st.ColorJitter(*[0.1, 0.1, 0.1, 0.1]),
-                                      st.RandomSizedCrop(size=size),
+                                      st.RandomSizedCrop(size=train_size),
                                       st.ToTensor(),
                                       st.Normalize(mean, std)
                                       ])
-    val_transforms = st.Compose([st.FreeScale(size),
+    val_transforms = st.Compose([st.FreeScale(val_size),
                                  st.ToTensor(),
                                  st.Normalize(mean, std)
                                  ])

@@ -117,7 +117,7 @@ class Trainer(object):
             losses.update(loss.item(), imgs.size()[0])
             scores, _ = self.scores.get_scores()
 
-            if i % 200 == 0:
+            if i % 200 == 0 or i == len(self.loaders['train']) - 1:
                 logger.info(f"Train: [{i}/{len(self.loaders['train'])}] | "
                             f"Time: {self.timer.timeSince()} | "
                             f"loss: {losses.avg:.4f} | "

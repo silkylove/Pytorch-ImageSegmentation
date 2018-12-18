@@ -51,7 +51,11 @@
     "num_workers": 8,
     "ckpt_dir": "./checkpoints/unet_ae-ce",
     "resume": false,
-    "image_size": 256,
+    "train_image_size": 256,
+    "val_image_size": [
+        256,
+        256
+    ],
     "in_channels": 3,
     "data_type": "voc2012",
     "image_root": "/home/yhuangcc/data/VOC2012/",

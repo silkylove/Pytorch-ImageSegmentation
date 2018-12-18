@@ -261,7 +261,7 @@ class RandomTranslate(object):
                      scale=1.0,
                      angle=0.0,
                      shear=0.0,
-                     fillcolor=250))
+                     fillcolor=255))
 
 
 class RandomRotate(object):

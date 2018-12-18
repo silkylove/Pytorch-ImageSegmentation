@@ -47,7 +47,11 @@
     "num_workers": 8,
     "ckpt_dir": "./checkpoint_1/",
     "resume": false,
-    "image_size": 513,
+    "train_image_size": 513,
+    "val_image_size": [
+        513,
+        513
+    ],
     "in_channels": 3,
     "data_type": "voc2012",
     "image_root": "/home/yhuangcc/data/VOC2012/",
