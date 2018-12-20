@@ -32,7 +32,7 @@ to see the training log.
 ## Results untill now
 Now I had done the experiments on deeplabv3+ and pspnet (one can get the training log under [ckpt](https://github.com/silkylove/Pytorch-ImageSegmentation/tree/master/checkpoints/)):
 Performance with 4 1080ti:
-Deeplabv3+ on VOC2012 validation with 16 batchsize and 30K iterations in 12 hours.
+Deeplabv3+ on VOC2012 validation with 16 batchsize and 30K iterations.
 The pretrained model can be got from [deeplabv3+](https://drive.google.com/open?id=1BsQziuoBMteWyrYcBs99D5GjvbbJS0X1)
 
 | Backbone | train/val OS| mIoU paper| mIoU repo|
