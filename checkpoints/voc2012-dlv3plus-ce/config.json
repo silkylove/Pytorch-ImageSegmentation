@@ -3,20 +3,24 @@
         "unet": {
             "filter_scale": 1
         },
+        "unet_ae": {
+            "backend": "resnet101",
+            "pretrained": "imagenet"
+        },
         "dlv3plus": {
             "backend": "resnet101",
             "os": 16,
-            "pretrained": true
+            "pretrained": "imagenet"
         },
         "pspnet": {
-            "backend": "resnet18",
+            "backend": "resnet101",
             "pool_scales": [
                 1,
                 2,
                 3,
                 6
             ],
-            "pretrained": true
+            "pretrained": "imagenet"
         }
     },
     "loss_params": {
@@ -44,8 +48,8 @@
     "batch_size": 16,
     "distributed": true,
     "gpuid": "0,1,2,3",
-    "num_workers": 8,
-    "ckpt_dir": "./checkpoint_1/",
+    "num_workers": 16,
+    "ckpt_dir": "./checkpoints/voc2012-dlv3plus-ce-1",
     "resume": false,
     "train_image_size": 513,
     "val_image_size": [

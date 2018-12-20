@@ -7,7 +7,8 @@ import argparse
 All backbones
 ['resnet18', 'resnet34', 'resnet50', 'resnet101',
  'resnet152', 'senet154', 'se_resnet50', 'se_resnet101',
- 'se_resnet152', 'se_resnext50_32x4d', 'se_resnext101_32x4d']
+ 'se_resnet152', 'se_resnext50_32x4d', 'se_resnext101_32x4d',
+ 'mobilenet_v2' (for deeplabv3+)]
 '''
 
 unet_params = {'filter_scale': 1}
@@ -50,12 +51,12 @@ parse.add_argument('--epochs', default=None)
 parse.add_argument('--batch_size', default=16 * 1, type=int)
 parse.add_argument('--distributed', default=True, type=bool)
 parse.add_argument('--gpuid', default='0,1,2,3', type=str)
-parse.add_argument('--num_workers', default=8, type=int)
+parse.add_argument('--num_workers', default=16, type=int)
 parse.add_argument('--ckpt_dir', default='./checkpoints/')
 parse.add_argument('--resume', default=False, help='resume from checkpoint', type=bool)
 
 parse.add_argument('--train_image_size', default=513, type=int)
-parse.add_argument('--val_image_size', default=(513, 513),help='h,w')
+parse.add_argument('--val_image_size', default=(513, 513), help='w,h')
 parse.add_argument('--in_channels', default=3, type=int)
 
 ### VOC2012 path config
@@ -76,7 +77,7 @@ parse.add_argument('--label_file', default='/home/yhuangcc/ImageSegmentation/dat
 
 def get_config():
     config, unparsed = parse.parse_known_args()
-    config.ckpt_dir = os.path.join(config.ckpt_dir, f"{config.data_type}-{config.model}-{config.loss}-1")
+    config.ckpt_dir = os.path.join(config.ckpt_dir, f"{config.data_type}-{config.model}-{config.loss}")
     if not os.path.exists(config.ckpt_dir):
         os.makedirs(config.ckpt_dir)
     logger = logging.getLogger("InfoLog")

@@ -1,361 +1,408 @@
-2018-12-10 17:10:59,689 - InfoLog - INFO - ***START TRAINING IMAGE SEGMENTATION***
-2018-12-10 17:11:05,601 - InfoLog - INFO - Epoch :0
-2018-12-10 17:11:19,205 - InfoLog - INFO - Train: [0/662] | Time: 0m 19s | loss: 3.1034 | oa:0.0316 | ma: 0.0385 | fa: 0.0175 | miou: 0.0106
-2018-12-10 17:16:09,089 - InfoLog - INFO - Train: [200/662] | Time: 5m 9s | loss: 0.9502 | oa:0.7441 | ma: 0.2619 | fa: 0.5883 | miou: 0.2024
-2018-12-10 17:20:54,938 - InfoLog - INFO - Train: [400/662] | Time: 9m 55s | loss: 0.8165 | oa:0.7694 | ma: 0.3617 | fa: 0.6265 | miou: 0.2848
-2018-12-10 17:25:44,747 - InfoLog - INFO - Train: [600/662] | Time: 14m 45s | loss: 0.7451 | oa:0.7841 | ma: 0.4189 | fa: 0.6480 | miou: 0.3337
-2018-12-10 17:27:12,864 - InfoLog - INFO - val starts...
-2018-12-10 17:28:02,417 - InfoLog - INFO - Val: [90/91] | Time: 17m 2s | loss: 0.3735 | oa:0.8782 | ma: 0.6753 | fa: 0.8007 | miou: 0.5228
-2018-12-10 17:28:03,546 - InfoLog - INFO - ------
-2018-12-10 17:28:04,221 - InfoLog - INFO - ***Saving model***
-2018-12-10 17:28:04,222 - InfoLog - INFO - Epoch :1
-2018-12-10 17:28:08,116 - InfoLog - INFO - Train: [0/662] | Time: 17m 8s | loss: 0.3110 | oa:0.9161 | ma: 0.5689 | fa: 0.8605 | miou: 0.3753
-2018-12-10 17:32:52,382 - InfoLog - INFO - Train: [200/662] | Time: 21m 52s | loss: 0.5092 | oa:0.8372 | ma: 0.5952 | fa: 0.7283 | miou: 0.4821
-2018-12-10 17:37:42,636 - InfoLog - INFO - Train: [400/662] | Time: 26m 42s | loss: 0.5163 | oa:0.8358 | ma: 0.5906 | fa: 0.7257 | miou: 0.4784
-2018-12-10 17:42:30,767 - InfoLog - INFO - Train: [600/662] | Time: 31m 31s | loss: 0.5192 | oa:0.8348 | ma: 0.5945 | fa: 0.7237 | miou: 0.4827
-2018-12-10 17:43:58,089 - InfoLog - INFO - val starts...
-2018-12-10 17:44:46,041 - InfoLog - INFO - Val: [90/91] | Time: 33m 46s | loss: 0.3327 | oa:0.8935 | ma: 0.7018 | fa: 0.8184 | miou: 0.5631
-2018-12-10 17:44:46,042 - InfoLog - INFO - ------
-2018-12-10 17:44:46,768 - InfoLog - INFO - ***Saving model***
-2018-12-10 17:44:46,769 - InfoLog - INFO - Epoch :2
-2018-12-10 17:44:50,881 - InfoLog - INFO - Train: [0/662] | Time: 33m 51s | loss: 0.6894 | oa:0.7655 | ma: 0.4854 | fa: 0.6361 | miou: 0.3575
-2018-12-10 17:49:35,465 - InfoLog - INFO - Train: [200/662] | Time: 38m 35s | loss: 0.4539 | oa:0.8532 | ma: 0.6505 | fa: 0.7498 | miou: 0.5400
-2018-12-10 17:54:18,836 - InfoLog - INFO - Train: [400/662] | Time: 43m 19s | loss: 0.4549 | oa:0.8523 | ma: 0.6552 | fa: 0.7486 | miou: 0.5434
-2018-12-10 17:59:02,297 - InfoLog - INFO - Train: [600/662] | Time: 48m 2s | loss: 0.4618 | oa:0.8510 | ma: 0.6502 | fa: 0.7466 | miou: 0.5381
-2018-12-10 18:00:27,948 - InfoLog - INFO - val starts...
-2018-12-10 18:01:14,751 - InfoLog - INFO - Val: [90/91] | Time: 50m 15s | loss: 0.3330 | oa:0.8917 | ma: 0.7261 | fa: 0.8183 | miou: 0.5608
-2018-12-10 18:01:14,752 - InfoLog - INFO - Epoch :3
-2018-12-10 18:01:19,496 - InfoLog - INFO - Train: [0/662] | Time: 50m 19s | loss: 0.2743 | oa:0.9055 | ma: 0.7311 | fa: 0.8523 | miou: 0.4777
-2018-12-10 18:06:04,283 - InfoLog - INFO - Train: [200/662] | Time: 55m 4s | loss: 0.4089 | oa:0.8650 | ma: 0.6793 | fa: 0.7682 | miou: 0.5690
-2018-12-10 18:10:47,840 - InfoLog - INFO - Train: [400/662] | Time: 59m 48s | loss: 0.4151 | oa:0.8630 | ma: 0.6807 | fa: 0.7649 | miou: 0.5683
-2018-12-10 18:15:28,063 - InfoLog - INFO - Train: [600/662] | Time: 64m 28s | loss: 0.4153 | oa:0.8632 | ma: 0.6815 | fa: 0.7652 | miou: 0.5688
-2018-12-10 18:16:56,281 - InfoLog - INFO - val starts...
-2018-12-10 18:17:43,778 - InfoLog - INFO - Val: [90/91] | Time: 66m 44s | loss: 0.3207 | oa:0.8925 | ma: 0.7599 | fa: 0.8254 | miou: 0.5895
-2018-12-10 18:17:43,779 - InfoLog - INFO - ------
-2018-12-10 18:17:44,584 - InfoLog - INFO - ***Saving model***
-2018-12-10 18:17:44,585 - InfoLog - INFO - Epoch :4
-2018-12-10 18:17:49,072 - InfoLog - INFO - Train: [0/662] | Time: 66m 49s | loss: 0.6069 | oa:0.8191 | ma: 0.6272 | fa: 0.7122 | miou: 0.3673
-2018-12-10 18:22:31,633 - InfoLog - INFO - Train: [200/662] | Time: 71m 31s | loss: 0.3778 | oa:0.8755 | ma: 0.7208 | fa: 0.7838 | miou: 0.6115
-2018-12-10 18:27:13,220 - InfoLog - INFO - Train: [400/662] | Time: 76m 13s | loss: 0.3690 | oa:0.8786 | ma: 0.7315 | fa: 0.7882 | miou: 0.6249
-2018-12-10 18:31:58,088 - InfoLog - INFO - Train: [600/662] | Time: 80m 58s | loss: 0.3788 | oa:0.8753 | ma: 0.7201 | fa: 0.7831 | miou: 0.6116
-2018-12-10 18:33:24,196 - InfoLog - INFO - val starts...
-2018-12-10 18:34:12,391 - InfoLog - INFO - Val: [90/91] | Time: 83m 12s | loss: 0.3051 | oa:0.9007 | ma: 0.7421 | fa: 0.8285 | miou: 0.5938
-2018-12-10 18:34:12,392 - InfoLog - INFO - ------
-2018-12-10 18:34:13,222 - InfoLog - INFO - ***Saving model***
-2018-12-10 18:34:13,223 - InfoLog - INFO - Epoch :5
-2018-12-10 18:34:17,527 - InfoLog - INFO - Train: [0/662] | Time: 83m 17s | loss: 0.3180 | oa:0.8965 | ma: 0.7164 | fa: 0.8107 | miou: 0.4832
-2018-12-10 18:39:01,077 - InfoLog - INFO - Train: [200/662] | Time: 88m 1s | loss: 0.3487 | oa:0.8835 | ma: 0.7400 | fa: 0.7957 | miou: 0.6341
-2018-12-10 18:43:42,479 - InfoLog - INFO - Train: [400/662] | Time: 92m 42s | loss: 0.3602 | oa:0.8802 | ma: 0.7372 | fa: 0.7907 | miou: 0.6288
-2018-12-10 18:48:26,942 - InfoLog - INFO - Train: [600/662] | Time: 97m 27s | loss: 0.3581 | oa:0.8806 | ma: 0.7345 | fa: 0.7913 | miou: 0.6275
-2018-12-10 18:49:52,813 - InfoLog - INFO - val starts...
-2018-12-10 18:50:38,990 - InfoLog - INFO - Val: [90/91] | Time: 99m 39s | loss: 0.2409 | oa:0.9200 | ma: 0.7940 | fa: 0.8599 | miou: 0.6631
-2018-12-10 18:50:38,991 - InfoLog - INFO - ------
-2018-12-10 18:50:39,782 - InfoLog - INFO - ***Saving model***
-2018-12-10 18:50:39,783 - InfoLog - INFO - Epoch :6
-2018-12-10 18:50:44,056 - InfoLog - INFO - Train: [0/662] | Time: 99m 44s | loss: 0.4384 | oa:0.8384 | ma: 0.6179 | fa: 0.7226 | miou: 0.4246
-2018-12-10 18:55:31,214 - InfoLog - INFO - Train: [200/662] | Time: 104m 31s | loss: 0.3579 | oa:0.8798 | ma: 0.7364 | fa: 0.7904 | miou: 0.6298
-2018-12-10 19:00:14,404 - InfoLog - INFO - Train: [400/662] | Time: 109m 14s | loss: 0.3520 | oa:0.8812 | ma: 0.7351 | fa: 0.7924 | miou: 0.6290
-2018-12-10 19:04:54,148 - InfoLog - INFO - Train: [600/662] | Time: 113m 54s | loss: 0.3516 | oa:0.8821 | ma: 0.7369 | fa: 0.7937 | miou: 0.6308
-2018-12-10 19:06:21,115 - InfoLog - INFO - val starts...
-2018-12-10 19:07:09,468 - InfoLog - INFO - Val: [90/91] | Time: 116m 9s | loss: 0.2740 | oa:0.9081 | ma: 0.7955 | fa: 0.8458 | miou: 0.6327
-2018-12-10 19:07:09,469 - InfoLog - INFO - Epoch :7
-2018-12-10 19:07:14,119 - InfoLog - INFO - Train: [0/662] | Time: 116m 14s | loss: 0.3071 | oa:0.8761 | ma: 0.7007 | fa: 0.8054 | miou: 0.5807
-2018-12-10 19:11:58,861 - InfoLog - INFO - Train: [200/662] | Time: 120m 59s | loss: 0.3280 | oa:0.8904 | ma: 0.7641 | fa: 0.8062 | miou: 0.6609
-2018-12-10 19:16:39,069 - InfoLog - INFO - Train: [400/662] | Time: 125m 39s | loss: 0.3315 | oa:0.8881 | ma: 0.7564 | fa: 0.8029 | miou: 0.6518
-2018-12-10 19:21:22,003 - InfoLog - INFO - Train: [600/662] | Time: 130m 22s | loss: 0.3274 | oa:0.8893 | ma: 0.7597 | fa: 0.8049 | miou: 0.6551
-2018-12-10 19:22:47,435 - InfoLog - INFO - val starts...
-2018-12-10 19:23:34,175 - InfoLog - INFO - Val: [90/91] | Time: 132m 34s | loss: 0.2488 | oa:0.9162 | ma: 0.7896 | fa: 0.8544 | miou: 0.6551
-2018-12-10 19:23:34,176 - InfoLog - INFO - Epoch :8
-2018-12-10 19:23:38,577 - InfoLog - INFO - Train: [0/662] | Time: 132m 38s | loss: 0.2267 | oa:0.9248 | ma: 0.7448 | fa: 0.8708 | miou: 0.5170
-2018-12-10 19:28:24,778 - InfoLog - INFO - Train: [200/662] | Time: 137m 25s | loss: 0.2824 | oa:0.9033 | ma: 0.7828 | fa: 0.8278 | miou: 0.6835
-2018-12-10 19:33:09,666 - InfoLog - INFO - Train: [400/662] | Time: 142m 9s | loss: 0.2924 | oa:0.8999 | ma: 0.7858 | fa: 0.8216 | miou: 0.6875
-2018-12-10 19:37:54,152 - InfoLog - INFO - Train: [600/662] | Time: 146m 54s | loss: 0.3007 | oa:0.8973 | ma: 0.7803 | fa: 0.8177 | miou: 0.6805
-2018-12-10 19:39:20,195 - InfoLog - INFO - val starts...
-2018-12-10 19:40:06,490 - InfoLog - INFO - Val: [90/91] | Time: 149m 6s | loss: 0.2356 | oa:0.9216 | ma: 0.8081 | fa: 0.8638 | miou: 0.6756
-2018-12-10 19:40:06,491 - InfoLog - INFO - ------
-2018-12-10 19:40:07,207 - InfoLog - INFO - ***Saving model***
-2018-12-10 19:40:07,208 - InfoLog - INFO - Epoch :9
-2018-12-10 19:40:11,448 - InfoLog - INFO - Train: [0/662] | Time: 149m 11s | loss: 0.2978 | oa:0.8977 | ma: 0.7021 | fa: 0.8247 | miou: 0.5579
-2018-12-10 19:44:51,475 - InfoLog - INFO - Train: [200/662] | Time: 153m 51s | loss: 0.2605 | oa:0.9105 | ma: 0.8202 | fa: 0.8388 | miou: 0.7270
-2018-12-10 19:49:33,572 - InfoLog - INFO - Train: [400/662] | Time: 158m 33s | loss: 0.2645 | oa:0.9094 | ma: 0.8143 | fa: 0.8373 | miou: 0.7218
-2018-12-10 19:54:16,384 - InfoLog - INFO - Train: [600/662] | Time: 163m 16s | loss: 0.2679 | oa:0.9077 | ma: 0.8111 | fa: 0.8345 | miou: 0.7158
-2018-12-10 19:55:42,243 - InfoLog - INFO - val starts...
-2018-12-10 19:56:30,118 - InfoLog - INFO - Val: [90/91] | Time: 165m 30s | loss: 0.2341 | oa:0.9223 | ma: 0.8150 | fa: 0.8657 | miou: 0.6802
-2018-12-10 19:56:30,119 - InfoLog - INFO - ------
-2018-12-10 19:56:30,931 - InfoLog - INFO - ***Saving model***
-2018-12-10 19:56:30,932 - InfoLog - INFO - Epoch :10
-2018-12-10 19:56:35,217 - InfoLog - INFO - Train: [0/662] | Time: 165m 35s | loss: 0.2430 | oa:0.9095 | ma: 0.8399 | fa: 0.8384 | miou: 0.6803
-2018-12-10 20:01:17,052 - InfoLog - INFO - Train: [200/662] | Time: 170m 17s | loss: 0.2941 | oa:0.8982 | ma: 0.7840 | fa: 0.8192 | miou: 0.6826
-2018-12-10 20:06:00,211 - InfoLog - INFO - Train: [400/662] | Time: 175m 0s | loss: 0.2778 | oa:0.9036 | ma: 0.7996 | fa: 0.8278 | miou: 0.7014
-2018-12-10 20:10:41,588 - InfoLog - INFO - Train: [600/662] | Time: 179m 41s | loss: 0.2779 | oa:0.9036 | ma: 0.7950 | fa: 0.8279 | miou: 0.6967
-2018-12-10 20:12:07,216 - InfoLog - INFO - val starts...
-2018-12-10 20:12:55,733 - InfoLog - INFO - Val: [90/91] | Time: 181m 56s | loss: 0.2256 | oa:0.9248 | ma: 0.8103 | fa: 0.8683 | miou: 0.6862
-2018-12-10 20:12:56,731 - InfoLog - INFO - ------
-2018-12-10 20:12:57,462 - InfoLog - INFO - ***Saving model***
-2018-12-10 20:12:57,463 - InfoLog - INFO - Epoch :11
-2018-12-10 20:13:02,268 - InfoLog - INFO - Train: [0/662] | Time: 182m 2s | loss: 0.3842 | oa:0.8636 | ma: 0.6818 | fa: 0.7623 | miou: 0.4287
-2018-12-10 20:17:50,286 - InfoLog - INFO - Train: [200/662] | Time: 186m 50s | loss: 0.2597 | oa:0.9096 | ma: 0.8145 | fa: 0.8371 | miou: 0.7233
-2018-12-10 20:22:38,244 - InfoLog - INFO - Train: [400/662] | Time: 191m 38s | loss: 0.2497 | oa:0.9131 | ma: 0.8247 | fa: 0.8432 | miou: 0.7342
-2018-12-10 20:27:27,580 - InfoLog - INFO - Train: [600/662] | Time: 196m 27s | loss: 0.2492 | oa:0.9130 | ma: 0.8237 | fa: 0.8430 | miou: 0.7328
-2018-12-10 20:28:54,894 - InfoLog - INFO - val starts...
-2018-12-10 20:29:40,780 - InfoLog - INFO - Val: [90/91] | Time: 198m 41s | loss: 0.2261 | oa:0.9269 | ma: 0.8157 | fa: 0.8722 | miou: 0.6965
-2018-12-10 20:29:40,781 - InfoLog - INFO - ------
-2018-12-10 20:29:41,557 - InfoLog - INFO - ***Saving model***
-2018-12-10 20:29:41,558 - InfoLog - INFO - Epoch :12
-2018-12-10 20:29:46,049 - InfoLog - INFO - Train: [0/662] | Time: 198m 46s | loss: 0.2903 | oa:0.8967 | ma: 0.6854 | fa: 0.8355 | miou: 0.5506
-2018-12-10 20:34:30,028 - InfoLog - INFO - Train: [200/662] | Time: 203m 30s | loss: 0.2448 | oa:0.9161 | ma: 0.8297 | fa: 0.8483 | miou: 0.7388
-2018-12-10 20:39:14,976 - InfoLog - INFO - Train: [400/662] | Time: 208m 15s | loss: 0.2365 | oa:0.9179 | ma: 0.8358 | fa: 0.8514 | miou: 0.7466
-2018-12-10 20:43:56,510 - InfoLog - INFO - Train: [600/662] | Time: 212m 56s | loss: 0.2360 | oa:0.9180 | ma: 0.8325 | fa: 0.8516 | miou: 0.7433
-2018-12-10 20:45:21,680 - InfoLog - INFO - val starts...
-2018-12-10 20:46:10,298 - InfoLog - INFO - Val: [90/91] | Time: 215m 10s | loss: 0.2193 | oa:0.9269 | ma: 0.8238 | fa: 0.8719 | miou: 0.6885
-2018-12-10 20:46:10,299 - InfoLog - INFO - Epoch :13
-2018-12-10 20:46:14,632 - InfoLog - INFO - Train: [0/662] | Time: 215m 14s | loss: 0.1509 | oa:0.9513 | ma: 0.8881 | fa: 0.9126 | miou: 0.6148
-2018-12-10 20:50:58,584 - InfoLog - INFO - Train: [200/662] | Time: 219m 58s | loss: 0.2313 | oa:0.9197 | ma: 0.8320 | fa: 0.8545 | miou: 0.7416
-2018-12-10 20:55:41,785 - InfoLog - INFO - Train: [400/662] | Time: 224m 42s | loss: 0.2281 | oa:0.9202 | ma: 0.8376 | fa: 0.8550 | miou: 0.7484
-2018-12-10 21:00:26,017 - InfoLog - INFO - Train: [600/662] | Time: 229m 26s | loss: 0.2263 | oa:0.9207 | ma: 0.8405 | fa: 0.8557 | miou: 0.7523
-2018-12-10 21:01:53,589 - InfoLog - INFO - val starts...
-2018-12-10 21:02:40,833 - InfoLog - INFO - Val: [90/91] | Time: 231m 41s | loss: 0.2071 | oa:0.9313 | ma: 0.8407 | fa: 0.8800 | miou: 0.7154
-2018-12-10 21:02:40,834 - InfoLog - INFO - ------
-2018-12-10 21:02:41,569 - InfoLog - INFO - ***Saving model***
-2018-12-10 21:02:41,570 - InfoLog - INFO - Epoch :14
-2018-12-10 21:02:46,071 - InfoLog - INFO - Train: [0/662] | Time: 231m 46s | loss: 0.1806 | oa:0.9348 | ma: 0.8689 | fa: 0.8794 | miou: 0.6917
-2018-12-10 21:07:25,626 - InfoLog - INFO - Train: [200/662] | Time: 236m 25s | loss: 0.2125 | oa:0.9241 | ma: 0.8552 | fa: 0.8615 | miou: 0.7706
-2018-12-10 21:12:06,548 - InfoLog - INFO - Train: [400/662] | Time: 241m 6s | loss: 0.2109 | oa:0.9253 | ma: 0.8534 | fa: 0.8635 | miou: 0.7691
-2018-12-10 21:16:47,415 - InfoLog - INFO - Train: [600/662] | Time: 245m 47s | loss: 0.2082 | oa:0.9262 | ma: 0.8566 | fa: 0.8651 | miou: 0.7738
-2018-12-10 21:18:12,255 - InfoLog - INFO - val starts...
-2018-12-10 21:18:59,792 - InfoLog - INFO - Val: [90/91] | Time: 248m 0s | loss: 0.1972 | oa:0.9352 | ma: 0.8601 | fa: 0.8882 | miou: 0.7335
-2018-12-10 21:18:59,792 - InfoLog - INFO - ------
-2018-12-10 21:19:00,558 - InfoLog - INFO - ***Saving model***
-2018-12-10 21:19:00,559 - InfoLog - INFO - Epoch :15
-2018-12-10 21:19:04,850 - InfoLog - INFO - Train: [0/662] | Time: 248m 5s | loss: 0.1892 | oa:0.9398 | ma: 0.7915 | fa: 0.8989 | miou: 0.5249
-2018-12-10 21:23:46,770 - InfoLog - INFO - Train: [200/662] | Time: 252m 47s | loss: 0.2008 | oa:0.9301 | ma: 0.8608 | fa: 0.8717 | miou: 0.7785
-2018-12-10 21:28:28,725 - InfoLog - INFO - Train: [400/662] | Time: 257m 29s | loss: 0.2003 | oa:0.9299 | ma: 0.8612 | fa: 0.8713 | miou: 0.7801
-2018-12-10 21:33:14,004 - InfoLog - INFO - Train: [600/662] | Time: 262m 14s | loss: 0.2047 | oa:0.9279 | ma: 0.8594 | fa: 0.8679 | miou: 0.7771
-2018-12-10 21:34:38,800 - InfoLog - INFO - val starts...
-2018-12-10 21:35:27,326 - InfoLog - INFO - Val: [90/91] | Time: 264m 27s | loss: 0.2120 | oa:0.9294 | ma: 0.8287 | fa: 0.8761 | miou: 0.7003
-2018-12-10 21:35:27,328 - InfoLog - INFO - Epoch :16
-2018-12-10 21:35:31,696 - InfoLog - INFO - Train: [0/662] | Time: 264m 32s | loss: 0.2592 | oa:0.9069 | ma: 0.6665 | fa: 0.8314 | miou: 0.5328
-2018-12-10 21:40:12,074 - InfoLog - INFO - Train: [200/662] | Time: 269m 12s | loss: 0.1843 | oa:0.9343 | ma: 0.8725 | fa: 0.8789 | miou: 0.7963
-2018-12-10 21:44:57,993 - InfoLog - INFO - Train: [400/662] | Time: 273m 58s | loss: 0.1823 | oa:0.9349 | ma: 0.8731 | fa: 0.8797 | miou: 0.7968
-2018-12-10 21:49:38,076 - InfoLog - INFO - Train: [600/662] | Time: 278m 38s | loss: 0.1862 | oa:0.9338 | ma: 0.8707 | fa: 0.8779 | miou: 0.7932
-2018-12-10 21:51:04,571 - InfoLog - INFO - val starts...
-2018-12-10 21:51:54,065 - InfoLog - INFO - Val: [90/91] | Time: 280m 54s | loss: 0.2007 | oa:0.9353 | ma: 0.8449 | fa: 0.8873 | miou: 0.7277
-2018-12-10 21:51:54,066 - InfoLog - INFO - Epoch :17
-2018-12-10 21:51:58,630 - InfoLog - INFO - Train: [0/662] | Time: 280m 58s | loss: 0.2081 | oa:0.9364 | ma: 0.7395 | fa: 0.8864 | miou: 0.5342
-2018-12-10 21:56:39,381 - InfoLog - INFO - Train: [200/662] | Time: 285m 39s | loss: 0.1836 | oa:0.9347 | ma: 0.8779 | fa: 0.8794 | miou: 0.8000
-2018-12-10 22:01:19,659 - InfoLog - INFO - Train: [400/662] | Time: 290m 19s | loss: 0.1793 | oa:0.9364 | ma: 0.8796 | fa: 0.8824 | miou: 0.8031
-2018-12-10 22:06:03,915 - InfoLog - INFO - Train: [600/662] | Time: 295m 4s | loss: 0.1774 | oa:0.9368 | ma: 0.8814 | fa: 0.8831 | miou: 0.8061
-2018-12-10 22:07:29,559 - InfoLog - INFO - val starts...
-2018-12-10 22:08:17,529 - InfoLog - INFO - Val: [90/91] | Time: 297m 17s | loss: 0.1785 | oa:0.9405 | ma: 0.8508 | fa: 0.8937 | miou: 0.7439
-2018-12-10 22:08:17,530 - InfoLog - INFO - ------
-2018-12-10 22:08:18,272 - InfoLog - INFO - ***Saving model***
-2018-12-10 22:08:18,273 - InfoLog - INFO - Epoch :18
-2018-12-10 22:08:22,995 - InfoLog - INFO - Train: [0/662] | Time: 297m 23s | loss: 0.2712 | oa:0.9007 | ma: 0.7415 | fa: 0.8267 | miou: 0.5852
-2018-12-10 22:13:04,403 - InfoLog - INFO - Train: [200/662] | Time: 302m 4s | loss: 0.1658 | oa:0.9402 | ma: 0.8902 | fa: 0.8891 | miou: 0.8207
-2018-12-10 22:17:47,410 - InfoLog - INFO - Train: [400/662] | Time: 306m 47s | loss: 0.1643 | oa:0.9409 | ma: 0.8897 | fa: 0.8902 | miou: 0.8197
-2018-12-10 22:22:27,623 - InfoLog - INFO - Train: [600/662] | Time: 311m 27s | loss: 0.1659 | oa:0.9404 | ma: 0.8874 | fa: 0.8893 | miou: 0.8154
-2018-12-10 22:23:53,195 - InfoLog - INFO - val starts...
-2018-12-10 22:24:41,340 - InfoLog - INFO - Val: [90/91] | Time: 313m 41s | loss: 0.1996 | oa:0.9327 | ma: 0.8604 | fa: 0.8842 | miou: 0.7256
-2018-12-10 22:24:41,341 - InfoLog - INFO - Epoch :19
-2018-12-10 22:24:45,679 - InfoLog - INFO - Train: [0/662] | Time: 313m 45s | loss: 0.1213 | oa:0.9589 | ma: 0.8185 | fa: 0.9251 | miou: 0.6145
-2018-12-10 22:29:29,852 - InfoLog - INFO - Train: [200/662] | Time: 318m 30s | loss: 0.1602 | oa:0.9425 | ma: 0.8948 | fa: 0.8929 | miou: 0.8243
-2018-12-10 22:34:11,749 - InfoLog - INFO - Train: [400/662] | Time: 323m 12s | loss: 0.1569 | oa:0.9436 | ma: 0.8974 | fa: 0.8949 | miou: 0.8287
-2018-12-10 22:38:52,843 - InfoLog - INFO - Train: [600/662] | Time: 327m 53s | loss: 0.1578 | oa:0.9433 | ma: 0.8968 | fa: 0.8943 | miou: 0.8279
-2018-12-10 22:40:18,948 - InfoLog - INFO - val starts...
-2018-12-10 22:41:06,803 - InfoLog - INFO - Val: [90/91] | Time: 330m 7s | loss: 0.1850 | oa:0.9397 | ma: 0.8546 | fa: 0.8940 | miou: 0.7451
-2018-12-10 22:41:06,804 - InfoLog - INFO - ------
-2018-12-10 22:41:07,487 - InfoLog - INFO - ***Saving model***
-2018-12-10 22:41:07,488 - InfoLog - INFO - Epoch :20
-2018-12-10 22:41:11,852 - InfoLog - INFO - Train: [0/662] | Time: 330m 12s | loss: 0.1856 | oa:0.9444 | ma: 0.6521 | fa: 0.9019 | miou: 0.5644
-2018-12-10 22:45:54,468 - InfoLog - INFO - Train: [200/662] | Time: 334m 54s | loss: 0.1504 | oa:0.9460 | ma: 0.9010 | fa: 0.8989 | miou: 0.8354
-2018-12-10 22:50:35,432 - InfoLog - INFO - Train: [400/662] | Time: 339m 35s | loss: 0.1533 | oa:0.9446 | ma: 0.8983 | fa: 0.8967 | miou: 0.8309
-2018-12-10 22:55:18,821 - InfoLog - INFO - Train: [600/662] | Time: 344m 19s | loss: 0.1533 | oa:0.9446 | ma: 0.8990 | fa: 0.8966 | miou: 0.8317
-2018-12-10 22:56:43,869 - InfoLog - INFO - val starts...
-2018-12-10 22:57:33,315 - InfoLog - INFO - Val: [90/91] | Time: 346m 33s | loss: 0.1804 | oa:0.9418 | ma: 0.8615 | fa: 0.8971 | miou: 0.7499
-2018-12-10 22:57:34,526 - InfoLog - INFO - ------
-2018-12-10 22:57:35,317 - InfoLog - INFO - ***Saving model***
-2018-12-10 22:57:35,317 - InfoLog - INFO - Epoch :21
-2018-12-10 22:57:39,771 - InfoLog - INFO - Train: [0/662] | Time: 346m 40s | loss: 0.1676 | oa:0.9366 | ma: 0.8356 | fa: 0.8895 | miou: 0.7567
-2018-12-10 23:02:25,599 - InfoLog - INFO - Train: [200/662] | Time: 351m 25s | loss: 0.1462 | oa:0.9473 | ma: 0.9046 | fa: 0.9012 | miou: 0.8385
-2018-12-10 23:07:14,391 - InfoLog - INFO - Train: [400/662] | Time: 356m 14s | loss: 0.1440 | oa:0.9481 | ma: 0.9056 | fa: 0.9027 | miou: 0.8400
-2018-12-10 23:12:02,300 - InfoLog - INFO - Train: [600/662] | Time: 361m 2s | loss: 0.1453 | oa:0.9476 | ma: 0.9047 | fa: 0.9019 | miou: 0.8388
-2018-12-10 23:13:29,611 - InfoLog - INFO - val starts...
-2018-12-10 23:14:16,790 - InfoLog - INFO - Val: [90/91] | Time: 363m 17s | loss: 0.1777 | oa:0.9422 | ma: 0.8588 | fa: 0.8973 | miou: 0.7524
-2018-12-10 23:14:16,791 - InfoLog - INFO - ------
-2018-12-10 23:14:17,520 - InfoLog - INFO - ***Saving model***
-2018-12-10 23:14:17,521 - InfoLog - INFO - Epoch :22
-2018-12-10 23:14:22,033 - InfoLog - INFO - Train: [0/662] | Time: 363m 22s | loss: 0.2333 | oa:0.9176 | ma: 0.9094 | fa: 0.8514 | miou: 0.8178
-2018-12-10 23:19:04,125 - InfoLog - INFO - Train: [200/662] | Time: 368m 4s | loss: 0.1404 | oa:0.9488 | ma: 0.9097 | fa: 0.9039 | miou: 0.8454
-2018-12-10 23:23:42,286 - InfoLog - INFO - Train: [400/662] | Time: 372m 42s | loss: 0.1420 | oa:0.9485 | ma: 0.9092 | fa: 0.9032 | miou: 0.8455
-2018-12-10 23:28:27,297 - InfoLog - INFO - Train: [600/662] | Time: 377m 27s | loss: 0.1402 | oa:0.9492 | ma: 0.9088 | fa: 0.9046 | miou: 0.8459
-2018-12-10 23:29:54,408 - InfoLog - INFO - val starts...
-2018-12-10 23:30:42,008 - InfoLog - INFO - Val: [90/91] | Time: 379m 42s | loss: 0.1743 | oa:0.9431 | ma: 0.8617 | fa: 0.8990 | miou: 0.7579
-2018-12-10 23:30:42,008 - InfoLog - INFO - ------
-2018-12-10 23:30:42,738 - InfoLog - INFO - ***Saving model***
-2018-12-10 23:30:42,739 - InfoLog - INFO - Epoch :23
-2018-12-10 23:30:47,039 - InfoLog - INFO - Train: [0/662] | Time: 379m 47s | loss: 0.0973 | oa:0.9651 | ma: 0.8199 | fa: 0.9339 | miou: 0.7103
-2018-12-10 23:35:25,800 - InfoLog - INFO - Train: [200/662] | Time: 384m 26s | loss: 0.1352 | oa:0.9507 | ma: 0.9138 | fa: 0.9073 | miou: 0.8520
-2018-12-10 23:40:07,212 - InfoLog - INFO - Train: [400/662] | Time: 389m 7s | loss: 0.1328 | oa:0.9516 | ma: 0.9153 | fa: 0.9088 | miou: 0.8542
-2018-12-10 23:44:46,695 - InfoLog - INFO - Train: [600/662] | Time: 393m 47s | loss: 0.1303 | oa:0.9526 | ma: 0.9166 | fa: 0.9106 | miou: 0.8564
-2018-12-10 23:46:11,352 - InfoLog - INFO - val starts...
-2018-12-10 23:46:59,664 - InfoLog - INFO - Val: [90/91] | Time: 395m 59s | loss: 0.1701 | oa:0.9466 | ma: 0.8576 | fa: 0.9034 | miou: 0.7649
-2018-12-10 23:46:59,664 - InfoLog - INFO - ------
-2018-12-10 23:47:00,423 - InfoLog - INFO - ***Saving model***
-2018-12-10 23:47:00,423 - InfoLog - INFO - Epoch :24
-2018-12-10 23:47:04,491 - InfoLog - INFO - Train: [0/662] | Time: 396m 4s | loss: 0.1507 | oa:0.9517 | ma: 0.8663 | fa: 0.9116 | miou: 0.6949
-2018-12-10 23:51:44,809 - InfoLog - INFO - Train: [200/662] | Time: 400m 45s | loss: 0.1269 | oa:0.9535 | ma: 0.9178 | fa: 0.9123 | miou: 0.8594
-2018-12-10 23:56:29,460 - InfoLog - INFO - Train: [400/662] | Time: 405m 29s | loss: 0.1254 | oa:0.9543 | ma: 0.9201 | fa: 0.9137 | miou: 0.8620
-2018-12-11 00:01:10,388 - InfoLog - INFO - Train: [600/662] | Time: 410m 10s | loss: 0.1251 | oa:0.9545 | ma: 0.9193 | fa: 0.9140 | miou: 0.8613
-2018-12-11 00:02:36,246 - InfoLog - INFO - val starts...
-2018-12-11 00:03:25,303 - InfoLog - INFO - Val: [90/91] | Time: 412m 25s | loss: 0.1779 | oa:0.9451 | ma: 0.8627 | fa: 0.9023 | miou: 0.7615
-2018-12-11 00:03:25,304 - InfoLog - INFO - Epoch :25
-2018-12-11 00:03:29,762 - InfoLog - INFO - Train: [0/662] | Time: 412m 30s | loss: 0.1355 | oa:0.9477 | ma: 0.9194 | fa: 0.9074 | miou: 0.7912
-2018-12-11 00:08:14,706 - InfoLog - INFO - Train: [200/662] | Time: 417m 15s | loss: 0.1239 | oa:0.9548 | ma: 0.9197 | fa: 0.9146 | miou: 0.8631
-2018-12-11 00:12:57,526 - InfoLog - INFO - Train: [400/662] | Time: 421m 57s | loss: 0.1228 | oa:0.9553 | ma: 0.9227 | fa: 0.9154 | miou: 0.8664
-2018-12-11 00:17:40,000 - InfoLog - INFO - Train: [600/662] | Time: 426m 40s | loss: 0.1225 | oa:0.9553 | ma: 0.9219 | fa: 0.9155 | miou: 0.8646
-2018-12-11 00:19:05,549 - InfoLog - INFO - val starts...
-2018-12-11 00:19:54,320 - InfoLog - INFO - Val: [90/91] | Time: 428m 54s | loss: 0.1746 | oa:0.9466 | ma: 0.8544 | fa: 0.9038 | miou: 0.7656
-2018-12-11 00:19:54,321 - InfoLog - INFO - ------
-2018-12-11 00:19:55,065 - InfoLog - INFO - ***Saving model***
-2018-12-11 00:19:55,066 - InfoLog - INFO - Epoch :26
-2018-12-11 00:20:00,007 - InfoLog - INFO - Train: [0/662] | Time: 429m 0s | loss: 0.0871 | oa:0.9659 | ma: 0.8840 | fa: 0.9373 | miou: 0.7811
-2018-12-11 00:24:38,193 - InfoLog - INFO - Train: [200/662] | Time: 433m 38s | loss: 0.1184 | oa:0.9565 | ma: 0.9218 | fa: 0.9176 | miou: 0.8645
-2018-12-11 00:29:22,958 - InfoLog - INFO - Train: [400/662] | Time: 438m 23s | loss: 0.1216 | oa:0.9555 | ma: 0.9224 | fa: 0.9159 | miou: 0.8645
-2018-12-11 00:34:03,485 - InfoLog - INFO - Train: [600/662] | Time: 443m 3s | loss: 0.1208 | oa:0.9558 | ma: 0.9224 | fa: 0.9164 | miou: 0.8652
-2018-12-11 00:35:28,413 - InfoLog - INFO - val starts...
-2018-12-11 00:36:15,981 - InfoLog - INFO - Val: [90/91] | Time: 445m 16s | loss: 0.1690 | oa:0.9479 | ma: 0.8648 | fa: 0.9063 | miou: 0.7724
-2018-12-11 00:36:15,981 - InfoLog - INFO - ------
-2018-12-11 00:36:16,739 - InfoLog - INFO - ***Saving model***
-2018-12-11 00:36:16,740 - InfoLog - INFO - Epoch :27
-2018-12-11 00:36:21,139 - InfoLog - INFO - Train: [0/662] | Time: 445m 21s | loss: 0.0990 | oa:0.9659 | ma: 0.8861 | fa: 0.9364 | miou: 0.6545
-2018-12-11 00:41:06,887 - InfoLog - INFO - Train: [200/662] | Time: 450m 7s | loss: 0.1146 | oa:0.9578 | ma: 0.9273 | fa: 0.9200 | miou: 0.8718
-2018-12-11 00:45:48,753 - InfoLog - INFO - Train: [400/662] | Time: 454m 49s | loss: 0.1160 | oa:0.9574 | ma: 0.9261 | fa: 0.9193 | miou: 0.8709
-2018-12-11 00:50:30,688 - InfoLog - INFO - Train: [600/662] | Time: 459m 30s | loss: 0.1161 | oa:0.9575 | ma: 0.9266 | fa: 0.9193 | miou: 0.8715
-2018-12-11 00:51:57,687 - InfoLog - INFO - val starts...
-2018-12-11 00:52:44,668 - InfoLog - INFO - Val: [90/91] | Time: 461m 44s | loss: 0.1618 | oa:0.9486 | ma: 0.8714 | fa: 0.9076 | miou: 0.7742
-2018-12-11 00:52:44,669 - InfoLog - INFO - ------
-2018-12-11 00:52:45,462 - InfoLog - INFO - ***Saving model***
-2018-12-11 00:52:45,463 - InfoLog - INFO - Epoch :28
-2018-12-11 00:52:49,731 - InfoLog - INFO - Train: [0/662] | Time: 461m 50s | loss: 0.1649 | oa:0.9380 | ma: 0.9002 | fa: 0.8838 | miou: 0.8483
-2018-12-11 00:57:34,275 - InfoLog - INFO - Train: [200/662] | Time: 466m 34s | loss: 0.1133 | oa:0.9586 | ma: 0.9302 | fa: 0.9213 | miou: 0.8779
-2018-12-11 01:02:14,348 - InfoLog - INFO - Train: [400/662] | Time: 471m 14s | loss: 0.1132 | oa:0.9584 | ma: 0.9299 | fa: 0.9210 | miou: 0.8765
-2018-12-11 01:07:00,003 - InfoLog - INFO - Train: [600/662] | Time: 476m 0s | loss: 0.1119 | oa:0.9590 | ma: 0.9308 | fa: 0.9221 | miou: 0.8775
-2018-12-11 01:08:25,683 - InfoLog - INFO - val starts...
-2018-12-11 01:09:14,703 - InfoLog - INFO - Val: [90/91] | Time: 478m 15s | loss: 0.1746 | oa:0.9475 | ma: 0.8606 | fa: 0.9052 | miou: 0.7681
-2018-12-11 01:09:14,704 - InfoLog - INFO - Epoch :29
-2018-12-11 01:09:19,157 - InfoLog - INFO - Train: [0/662] | Time: 478m 19s | loss: 0.1341 | oa:0.9443 | ma: 0.8650 | fa: 0.8964 | miou: 0.6484
-2018-12-11 01:14:01,696 - InfoLog - INFO - Train: [200/662] | Time: 483m 2s | loss: 0.1087 | oa:0.9598 | ma: 0.9305 | fa: 0.9234 | miou: 0.8777
-2018-12-11 01:18:43,617 - InfoLog - INFO - Train: [400/662] | Time: 487m 43s | loss: 0.1108 | oa:0.9594 | ma: 0.9292 | fa: 0.9228 | miou: 0.8759
-2018-12-11 01:23:27,528 - InfoLog - INFO - Train: [600/662] | Time: 492m 27s | loss: 0.1100 | oa:0.9597 | ma: 0.9303 | fa: 0.9233 | miou: 0.8770
-2018-12-11 01:24:52,395 - InfoLog - INFO - val starts...
-2018-12-11 01:25:38,973 - InfoLog - INFO - Val: [90/91] | Time: 494m 39s | loss: 0.1688 | oa:0.9477 | ma: 0.8724 | fa: 0.9071 | miou: 0.7713
-2018-12-11 01:25:38,974 - InfoLog - INFO - Epoch :30
-2018-12-11 01:25:43,462 - InfoLog - INFO - Train: [0/662] | Time: 494m 43s | loss: 0.0813 | oa:0.9714 | ma: 0.8976 | fa: 0.9455 | miou: 0.8379
-2018-12-11 01:30:30,719 - InfoLog - INFO - Train: [200/662] | Time: 499m 31s | loss: 0.1074 | oa:0.9606 | ma: 0.9324 | fa: 0.9251 | miou: 0.8805
-2018-12-11 01:35:13,748 - InfoLog - INFO - Train: [400/662] | Time: 504m 14s | loss: 0.1063 | oa:0.9608 | ma: 0.9326 | fa: 0.9254 | miou: 0.8809
-2018-12-11 01:40:01,311 - InfoLog - INFO - Train: [600/662] | Time: 509m 1s | loss: 0.1071 | oa:0.9607 | ma: 0.9326 | fa: 0.9251 | miou: 0.8808
-2018-12-11 01:41:29,720 - InfoLog - INFO - val starts...
-2018-12-11 01:42:18,279 - InfoLog - INFO - Val: [90/91] | Time: 511m 18s | loss: 0.1663 | oa:0.9489 | ma: 0.8683 | fa: 0.9078 | miou: 0.7725
-2018-12-11 01:42:19,547 - InfoLog - INFO - Epoch :31
-2018-12-11 01:42:23,802 - InfoLog - INFO - Train: [0/662] | Time: 511m 24s | loss: 0.0664 | oa:0.9778 | ma: 0.9592 | fa: 0.9579 | miou: 0.7527
-2018-12-11 01:47:14,860 - InfoLog - INFO - Train: [200/662] | Time: 516m 15s | loss: 0.1078 | oa:0.9605 | ma: 0.9349 | fa: 0.9246 | miou: 0.8829
-2018-12-11 01:52:04,271 - InfoLog - INFO - Train: [400/662] | Time: 521m 4s | loss: 0.1057 | oa:0.9611 | ma: 0.9355 | fa: 0.9258 | miou: 0.8836
-2018-12-11 01:56:54,485 - InfoLog - INFO - Train: [600/662] | Time: 525m 54s | loss: 0.1058 | oa:0.9610 | ma: 0.9336 | fa: 0.9256 | miou: 0.8819
-2018-12-11 01:58:22,459 - InfoLog - INFO - val starts...
-2018-12-11 01:59:08,321 - InfoLog - INFO - Val: [90/91] | Time: 528m 8s | loss: 0.1647 | oa:0.9499 | ma: 0.8726 | fa: 0.9098 | miou: 0.7796
-2018-12-11 01:59:08,323 - InfoLog - INFO - ------
-2018-12-11 01:59:09,295 - InfoLog - INFO - ***Saving model***
-2018-12-11 01:59:09,296 - InfoLog - INFO - Epoch :32
-2018-12-11 01:59:13,758 - InfoLog - INFO - Train: [0/662] | Time: 528m 14s | loss: 0.1048 | oa:0.9609 | ma: 0.9164 | fa: 0.9276 | miou: 0.7109
-2018-12-11 02:04:00,232 - InfoLog - INFO - Train: [200/662] | Time: 533m 0s | loss: 0.1029 | oa:0.9622 | ma: 0.9382 | fa: 0.9278 | miou: 0.8880
-2018-12-11 02:08:43,778 - InfoLog - INFO - Train: [400/662] | Time: 537m 44s | loss: 0.1054 | oa:0.9611 | ma: 0.9354 | fa: 0.9259 | miou: 0.8847
-2018-12-11 02:13:26,906 - InfoLog - INFO - Train: [600/662] | Time: 542m 27s | loss: 0.1048 | oa:0.9613 | ma: 0.9351 | fa: 0.9261 | miou: 0.8840
-2018-12-11 02:14:51,759 - InfoLog - INFO - val starts...
-2018-12-11 02:15:39,652 - InfoLog - INFO - Val: [90/91] | Time: 544m 39s | loss: 0.1691 | oa:0.9499 | ma: 0.8684 | fa: 0.9097 | miou: 0.7795
-2018-12-11 02:15:39,652 - InfoLog - INFO - Epoch :33
-2018-12-11 02:15:43,925 - InfoLog - INFO - Train: [0/662] | Time: 544m 44s | loss: 0.1192 | oa:0.9561 | ma: 0.9064 | fa: 0.9159 | miou: 0.8443
-2018-12-11 02:20:28,731 - InfoLog - INFO - Train: [200/662] | Time: 549m 29s | loss: 0.1035 | oa:0.9619 | ma: 0.9320 | fa: 0.9275 | miou: 0.8801
-2018-12-11 02:25:15,564 - InfoLog - INFO - Train: [400/662] | Time: 554m 15s | loss: 0.1022 | oa:0.9623 | ma: 0.9351 | fa: 0.9282 | miou: 0.8846
-2018-12-11 02:29:58,994 - InfoLog - INFO - Train: [600/662] | Time: 558m 59s | loss: 0.1012 | oa:0.9627 | ma: 0.9365 | fa: 0.9289 | miou: 0.8870
-2018-12-11 02:31:24,763 - InfoLog - INFO - val starts...
-2018-12-11 02:32:10,842 - InfoLog - INFO - Val: [90/91] | Time: 561m 11s | loss: 0.1684 | oa:0.9494 | ma: 0.8666 | fa: 0.9086 | miou: 0.7781
-2018-12-11 02:32:10,844 - InfoLog - INFO - Epoch :34
-2018-12-11 02:32:15,723 - InfoLog - INFO - Train: [0/662] | Time: 561m 16s | loss: 0.1373 | oa:0.9471 | ma: 0.7578 | fa: 0.9031 | miou: 0.6257
-2018-12-11 02:36:59,598 - InfoLog - INFO - Train: [200/662] | Time: 565m 59s | loss: 0.0993 | oa:0.9634 | ma: 0.9362 | fa: 0.9300 | miou: 0.8864
-2018-12-11 02:41:44,647 - InfoLog - INFO - Train: [400/662] | Time: 570m 44s | loss: 0.1011 | oa:0.9626 | ma: 0.9368 | fa: 0.9286 | miou: 0.8867
-2018-12-11 02:46:33,497 - InfoLog - INFO - Train: [600/662] | Time: 575m 33s | loss: 0.1012 | oa:0.9626 | ma: 0.9373 | fa: 0.9285 | miou: 0.8875
-2018-12-11 02:48:00,783 - InfoLog - INFO - val starts...
-2018-12-11 02:48:49,697 - InfoLog - INFO - Val: [90/91] | Time: 577m 50s | loss: 0.1696 | oa:0.9496 | ma: 0.8643 | fa: 0.9086 | miou: 0.7769
-2018-12-11 02:48:49,699 - InfoLog - INFO - Epoch :35
-2018-12-11 02:48:54,053 - InfoLog - INFO - Train: [0/662] | Time: 577m 54s | loss: 0.0837 | oa:0.9703 | ma: 0.8208 | fa: 0.9443 | miou: 0.7508
-2018-12-11 02:53:40,887 - InfoLog - INFO - Train: [200/662] | Time: 582m 41s | loss: 0.1017 | oa:0.9624 | ma: 0.9376 | fa: 0.9281 | miou: 0.8905
-2018-12-11 02:58:23,781 - InfoLog - INFO - Train: [400/662] | Time: 587m 24s | loss: 0.0999 | oa:0.9629 | ma: 0.9387 | fa: 0.9292 | miou: 0.8901
-2018-12-11 03:03:10,534 - InfoLog - INFO - Train: [600/662] | Time: 592m 10s | loss: 0.0995 | oa:0.9630 | ma: 0.9379 | fa: 0.9294 | miou: 0.8888
-2018-12-11 03:04:36,066 - InfoLog - INFO - val starts...
-2018-12-11 03:05:23,187 - InfoLog - INFO - Val: [90/91] | Time: 594m 23s | loss: 0.1686 | oa:0.9491 | ma: 0.8743 | fa: 0.9089 | miou: 0.7770
-2018-12-11 03:05:23,187 - InfoLog - INFO - Epoch :36
-2018-12-11 03:05:27,540 - InfoLog - INFO - Train: [0/662] | Time: 594m 27s | loss: 0.1047 | oa:0.9609 | ma: 0.9142 | fa: 0.9258 | miou: 0.8599
-2018-12-11 03:10:12,216 - InfoLog - INFO - Train: [200/662] | Time: 599m 12s | loss: 0.0997 | oa:0.9628 | ma: 0.9393 | fa: 0.9288 | miou: 0.8906
-2018-12-11 03:14:57,250 - InfoLog - INFO - Train: [400/662] | Time: 603m 57s | loss: 0.0995 | oa:0.9629 | ma: 0.9386 | fa: 0.9290 | miou: 0.8895
-2018-12-11 03:19:40,642 - InfoLog - INFO - Train: [600/662] | Time: 608m 40s | loss: 0.0993 | oa:0.9631 | ma: 0.9386 | fa: 0.9294 | miou: 0.8897
-2018-12-11 03:21:07,575 - InfoLog - INFO - val starts...
-2018-12-11 03:21:55,853 - InfoLog - INFO - Val: [90/91] | Time: 610m 56s | loss: 0.1676 | oa:0.9496 | ma: 0.8742 | fa: 0.9096 | miou: 0.7790
-2018-12-11 03:21:55,854 - InfoLog - INFO - Epoch :37
-2018-12-11 03:22:00,224 - InfoLog - INFO - Train: [0/662] | Time: 611m 0s | loss: 0.1036 | oa:0.9584 | ma: 0.7736 | fa: 0.9249 | miou: 0.6780
-2018-12-11 03:26:39,698 - InfoLog - INFO - Train: [200/662] | Time: 615m 40s | loss: 0.0982 | oa:0.9635 | ma: 0.9375 | fa: 0.9303 | miou: 0.8891
-2018-12-11 03:31:25,707 - InfoLog - INFO - Train: [400/662] | Time: 620m 26s | loss: 0.0985 | oa:0.9634 | ma: 0.9383 | fa: 0.9300 | miou: 0.8894
-2018-12-11 03:36:09,307 - InfoLog - INFO - Train: [600/662] | Time: 625m 9s | loss: 0.0978 | oa:0.9636 | ma: 0.9389 | fa: 0.9305 | miou: 0.8903
-2018-12-11 03:37:36,301 - InfoLog - INFO - val starts...
-2018-12-11 03:38:22,752 - InfoLog - INFO - Val: [90/91] | Time: 627m 23s | loss: 0.1687 | oa:0.9495 | ma: 0.8678 | fa: 0.9091 | miou: 0.7767
-2018-12-11 03:38:22,753 - InfoLog - INFO - Epoch :38
-2018-12-11 03:38:27,126 - InfoLog - INFO - Train: [0/662] | Time: 627m 27s | loss: 0.0846 | oa:0.9673 | ma: 0.9325 | fa: 0.9375 | miou: 0.8163
-2018-12-11 03:43:12,749 - InfoLog - INFO - Train: [200/662] | Time: 632m 13s | loss: 0.0989 | oa:0.9632 | ma: 0.9383 | fa: 0.9297 | miou: 0.8896
-2018-12-11 03:47:55,097 - InfoLog - INFO - Train: [400/662] | Time: 636m 55s | loss: 0.0977 | oa:0.9636 | ma: 0.9384 | fa: 0.9304 | miou: 0.8894
-2018-12-11 03:52:40,367 - InfoLog - INFO - Train: [600/662] | Time: 641m 40s | loss: 0.0968 | oa:0.9640 | ma: 0.9401 | fa: 0.9311 | miou: 0.8920
-2018-12-11 03:54:06,609 - InfoLog - INFO - val starts...
-2018-12-11 03:54:56,185 - InfoLog - INFO - Val: [90/91] | Time: 643m 56s | loss: 0.1642 | oa:0.9502 | ma: 0.8669 | fa: 0.9099 | miou: 0.7791
-2018-12-11 03:54:56,185 - InfoLog - INFO - Epoch :39
-2018-12-11 03:55:00,628 - InfoLog - INFO - Train: [0/662] | Time: 644m 0s | loss: 0.1412 | oa:0.9493 | ma: 0.7890 | fa: 0.9054 | miou: 0.6984
-2018-12-11 03:59:45,867 - InfoLog - INFO - Train: [200/662] | Time: 648m 46s | loss: 0.0944 | oa:0.9647 | ma: 0.9399 | fa: 0.9325 | miou: 0.8934
-2018-12-11 04:04:31,648 - InfoLog - INFO - Train: [400/662] | Time: 653m 31s | loss: 0.0953 | oa:0.9644 | ma: 0.9393 | fa: 0.9319 | miou: 0.8921
-2018-12-11 04:09:16,181 - InfoLog - INFO - Train: [600/662] | Time: 658m 16s | loss: 0.0957 | oa:0.9644 | ma: 0.9399 | fa: 0.9319 | miou: 0.8926
-2018-12-11 04:10:42,551 - InfoLog - INFO - val starts...
-2018-12-11 04:11:30,437 - InfoLog - INFO - Val: [90/91] | Time: 660m 30s | loss: 0.1669 | oa:0.9497 | ma: 0.8720 | fa: 0.9098 | miou: 0.7777
-2018-12-11 04:11:30,438 - InfoLog - INFO - Epoch :40
-2018-12-11 04:11:34,796 - InfoLog - INFO - Train: [0/662] | Time: 660m 35s | loss: 0.0868 | oa:0.9662 | ma: 0.8332 | fa: 0.9371 | miou: 0.7758
-2018-12-11 04:16:20,120 - InfoLog - INFO - Train: [200/662] | Time: 665m 20s | loss: 0.0933 | oa:0.9651 | ma: 0.9420 | fa: 0.9332 | miou: 0.8961
-2018-12-11 04:21:07,032 - InfoLog - INFO - Train: [400/662] | Time: 670m 7s | loss: 0.0950 | oa:0.9645 | ma: 0.9407 | fa: 0.9321 | miou: 0.8929
-2018-12-11 04:25:51,961 - InfoLog - INFO - Train: [600/662] | Time: 674m 52s | loss: 0.0967 | oa:0.9640 | ma: 0.9402 | fa: 0.9311 | miou: 0.8923
-2018-12-11 04:27:19,407 - InfoLog - INFO - val starts...
-2018-12-11 04:28:08,505 - InfoLog - INFO - Val: [90/91] | Time: 677m 8s | loss: 0.1670 | oa:0.9498 | ma: 0.8662 | fa: 0.9095 | miou: 0.7783
-2018-12-11 04:28:09,606 - InfoLog - INFO - Epoch :41
-2018-12-11 04:28:13,992 - InfoLog - INFO - Train: [0/662] | Time: 677m 14s | loss: 0.0908 | oa:0.9664 | ma: 0.7393 | fa: 0.9356 | miou: 0.7122
-2018-12-11 04:33:00,549 - InfoLog - INFO - Train: [200/662] | Time: 682m 0s | loss: 0.0954 | oa:0.9645 | ma: 0.9402 | fa: 0.9321 | miou: 0.8906
-2018-12-11 04:37:49,474 - InfoLog - INFO - Train: [400/662] | Time: 686m 49s | loss: 0.0944 | oa:0.9648 | ma: 0.9411 | fa: 0.9327 | miou: 0.8928
-2018-12-11 04:42:38,188 - InfoLog - INFO - Train: [600/662] | Time: 691m 38s | loss: 0.0964 | oa:0.9641 | ma: 0.9402 | fa: 0.9314 | miou: 0.8920
-2018-12-11 04:44:06,059 - InfoLog - INFO - val starts...
-2018-12-11 04:44:53,242 - InfoLog - INFO - Val: [90/91] | Time: 693m 53s | loss: 0.1656 | oa:0.9499 | ma: 0.8767 | fa: 0.9104 | miou: 0.7795
-2018-12-11 04:44:53,242 - InfoLog - INFO - Epoch :42
-2018-12-11 04:44:57,480 - InfoLog - INFO - Train: [0/662] | Time: 693m 57s | loss: 0.1379 | oa:0.9455 | ma: 0.8991 | fa: 0.8988 | miou: 0.7705
-2018-12-11 04:49:43,120 - InfoLog - INFO - Train: [200/662] | Time: 698m 43s | loss: 0.0978 | oa:0.9635 | ma: 0.9397 | fa: 0.9302 | miou: 0.8912
-2018-12-11 04:54:25,570 - InfoLog - INFO - Train: [400/662] | Time: 703m 25s | loss: 0.0946 | oa:0.9649 | ma: 0.9414 | fa: 0.9328 | miou: 0.8943
-2018-12-11 04:59:07,641 - InfoLog - INFO - Train: [600/662] | Time: 708m 7s | loss: 0.0959 | oa:0.9646 | ma: 0.9411 | fa: 0.9322 | miou: 0.8931
-2018-12-11 05:00:36,279 - InfoLog - INFO - val starts...
-2018-12-11 05:01:23,721 - InfoLog - INFO - Val: [90/91] | Time: 710m 24s | loss: 0.1669 | oa:0.9500 | ma: 0.8679 | fa: 0.9099 | miou: 0.7789
-2018-12-11 05:01:23,721 - InfoLog - INFO - Epoch :43
-2018-12-11 05:01:28,409 - InfoLog - INFO - Train: [0/662] | Time: 710m 28s | loss: 0.0860 | oa:0.9714 | ma: 0.9073 | fa: 0.9463 | miou: 0.7265
-2018-12-11 05:06:15,017 - InfoLog - INFO - Train: [200/662] | Time: 715m 15s | loss: 0.0963 | oa:0.9642 | ma: 0.9390 | fa: 0.9316 | miou: 0.8916
-2018-12-11 05:10:56,451 - InfoLog - INFO - Train: [400/662] | Time: 719m 56s | loss: 0.0961 | oa:0.9643 | ma: 0.9400 | fa: 0.9317 | miou: 0.8920
-2018-12-11 05:15:41,489 - InfoLog - INFO - Train: [600/662] | Time: 724m 41s | loss: 0.0956 | oa:0.9646 | ma: 0.9402 | fa: 0.9323 | miou: 0.8927
-2018-12-11 05:17:09,218 - InfoLog - INFO - val starts...
-2018-12-11 05:17:57,917 - InfoLog - INFO - Val: [90/91] | Time: 726m 58s | loss: 0.1649 | oa:0.9503 | ma: 0.8655 | fa: 0.9099 | miou: 0.7792
-2018-12-11 05:17:57,918 - InfoLog - INFO - Epoch :44
-2018-12-11 05:18:02,267 - InfoLog - INFO - Train: [0/662] | Time: 727m 2s | loss: 0.0886 | oa:0.9661 | ma: 0.9348 | fa: 0.9372 | miou: 0.7671
-2018-12-11 05:22:44,948 - InfoLog - INFO - Train: [200/662] | Time: 731m 45s | loss: 0.0950 | oa:0.9645 | ma: 0.9392 | fa: 0.9321 | miou: 0.8903
-2018-12-11 05:27:29,483 - InfoLog - INFO - Train: [400/662] | Time: 736m 29s | loss: 0.0952 | oa:0.9646 | ma: 0.9393 | fa: 0.9322 | miou: 0.8918
-2018-12-11 05:32:15,837 - InfoLog - INFO - Train: [600/662] | Time: 741m 16s | loss: 0.0949 | oa:0.9646 | ma: 0.9397 | fa: 0.9323 | miou: 0.8920
-2018-12-11 05:33:40,447 - InfoLog - INFO - val starts...
-2018-12-11 05:34:27,251 - InfoLog - INFO - Val: [90/91] | Time: 743m 27s | loss: 0.1690 | oa:0.9501 | ma: 0.8695 | fa: 0.9101 | miou: 0.7804
-2018-12-11 05:34:27,252 - InfoLog - INFO - ------
-2018-12-11 05:34:27,972 - InfoLog - INFO - ***Saving model***
-2018-12-11 05:34:27,973 - InfoLog - INFO - per class iou: {0: 0.9452796045314612, 1: 0.8842526993772136, 2: 0.4162829112985113, 3: 0.8886444982769303, 4: 0.7181623901942734, 5: 0.8116570003841029, 6: 0.9354062324784146, 7: 0.8932222157427437, 8: 0.9132677431464802, 9: 0.36992173045344695, 10: 0.8929146399292341, 11: 0.5914637079834956, 12: 0.8603082545122334, 13: 0.8770665577818108, 14: 0.8239598170272291, 15: 0.8506484987827309, 16: 0.6572986096065863, 17: 0.8733312272207063, 18: 0.5448552283596202, 19: 0.8857721871182507, 20: 0.7542848195123748}
+2018-12-19 15:51:54,560 - InfoLog - INFO - ***START TRAINING DLV3PLUS***
+2018-12-19 15:52:03,398 - InfoLog - INFO - Epoch :0
+2018-12-19 15:52:19,853 - InfoLog - INFO - Train: [0/662] | Time: 0m 25s | loss: 2.9602 | oa:0.1024 | ma: 0.0505 | fa: 0.0777 | miou: 0.0161
+2018-12-19 16:00:36,014 - InfoLog - INFO - Train: [200/662] | Time: 8m 41s | loss: 0.9915 | oa:0.7356 | ma: 0.2458 | fa: 0.5726 | miou: 0.1941
+2018-12-19 16:08:54,616 - InfoLog - INFO - Train: [400/662] | Time: 17m 0s | loss: 0.8117 | oa:0.7721 | ma: 0.3618 | fa: 0.6270 | miou: 0.2926
+2018-12-19 16:17:12,609 - InfoLog - INFO - Train: [600/662] | Time: 25m 18s | loss: 0.7328 | oa:0.7897 | ma: 0.4210 | fa: 0.6540 | miou: 0.3423
+2018-12-19 16:19:44,007 - InfoLog - INFO - Train: [661/662] | Time: 27m 49s | loss: 0.7158 | oa:0.7932 | ma: 0.4362 | fa: 0.6595 | miou: 0.3547
+2018-12-19 16:19:44,168 - InfoLog - INFO - val starts...
+2018-12-19 16:21:14,384 - InfoLog - INFO - Val: [90/91] | Time: 29m 19s | loss: 0.4985 | oa:0.8438 | ma: 0.5970 | fa: 0.7575 | miou: 0.4262
+2018-12-19 16:21:15,415 - InfoLog - INFO - ------
+2018-12-19 16:21:16,044 - InfoLog - INFO - ***Saving model***
+2018-12-19 16:21:16,044 - InfoLog - INFO - Epoch :1
+2018-12-19 16:21:22,476 - InfoLog - INFO - Train: [0/662] | Time: 29m 27s | loss: 0.5170 | oa:0.8336 | ma: 0.5425 | fa: 0.7834 | miou: 0.2681
+2018-12-19 16:29:38,995 - InfoLog - INFO - Train: [200/662] | Time: 37m 44s | loss: 0.5302 | oa:0.8333 | ma: 0.5873 | fa: 0.7227 | miou: 0.4722
+2018-12-19 16:37:52,769 - InfoLog - INFO - Train: [400/662] | Time: 45m 58s | loss: 0.5291 | oa:0.8350 | ma: 0.5956 | fa: 0.7248 | miou: 0.4809
+2018-12-19 16:46:07,849 - InfoLog - INFO - Train: [600/662] | Time: 54m 13s | loss: 0.5161 | oa:0.8387 | ma: 0.6051 | fa: 0.7297 | miou: 0.4912
+2018-12-19 16:48:35,913 - InfoLog - INFO - Train: [661/662] | Time: 56m 41s | loss: 0.5133 | oa:0.8395 | ma: 0.6068 | fa: 0.7308 | miou: 0.4932
+2018-12-19 16:48:36,431 - InfoLog - INFO - val starts...
+2018-12-19 16:50:07,171 - InfoLog - INFO - Val: [90/91] | Time: 58m 12s | loss: 0.3658 | oa:0.8823 | ma: 0.7441 | fa: 0.8080 | miou: 0.5569
+2018-12-19 16:50:07,172 - InfoLog - INFO - ------
+2018-12-19 16:50:08,031 - InfoLog - INFO - ***Saving model***
+2018-12-19 16:50:08,032 - InfoLog - INFO - Epoch :2
+2018-12-19 16:50:14,234 - InfoLog - INFO - Train: [0/662] | Time: 58m 19s | loss: 0.7130 | oa:0.7814 | ma: 0.6155 | fa: 0.6717 | miou: 0.3189
+2018-12-19 16:58:28,361 - InfoLog - INFO - Train: [200/662] | Time: 66m 33s | loss: 0.4530 | oa:0.8570 | ma: 0.6676 | fa: 0.7562 | miou: 0.5523
+2018-12-19 17:06:43,265 - InfoLog - INFO - Train: [400/662] | Time: 74m 48s | loss: 0.4485 | oa:0.8585 | ma: 0.6678 | fa: 0.7581 | miou: 0.5545
+2018-12-19 17:14:57,559 - InfoLog - INFO - Train: [600/662] | Time: 83m 2s | loss: 0.4442 | oa:0.8591 | ma: 0.6717 | fa: 0.7593 | miou: 0.5583
+2018-12-19 17:17:26,998 - InfoLog - INFO - Train: [661/662] | Time: 85m 32s | loss: 0.4437 | oa:0.8595 | ma: 0.6722 | fa: 0.7597 | miou: 0.5591
+2018-12-19 17:17:27,493 - InfoLog - INFO - val starts...
+2018-12-19 17:18:58,980 - InfoLog - INFO - Val: [90/91] | Time: 87m 4s | loss: 0.3241 | oa:0.9005 | ma: 0.7124 | fa: 0.8304 | miou: 0.5859
+2018-12-19 17:18:58,981 - InfoLog - INFO - ------
+2018-12-19 17:18:59,724 - InfoLog - INFO - ***Saving model***
+2018-12-19 17:18:59,725 - InfoLog - INFO - Epoch :3
+2018-12-19 17:19:05,941 - InfoLog - INFO - Train: [0/662] | Time: 87m 11s | loss: 0.2759 | oa:0.9205 | ma: 0.6985 | fa: 0.8674 | miou: 0.4316
+2018-12-19 17:27:19,604 - InfoLog - INFO - Train: [200/662] | Time: 95m 25s | loss: 0.4021 | oa:0.8696 | ma: 0.6978 | fa: 0.7748 | miou: 0.5874
+2018-12-19 17:35:31,335 - InfoLog - INFO - Train: [400/662] | Time: 103m 36s | loss: 0.3950 | oa:0.8717 | ma: 0.7058 | fa: 0.7777 | miou: 0.5966
+2018-12-19 17:43:45,479 - InfoLog - INFO - Train: [600/662] | Time: 111m 50s | loss: 0.3957 | oa:0.8718 | ma: 0.7032 | fa: 0.7782 | miou: 0.5930
+2018-12-19 17:46:14,169 - InfoLog - INFO - Train: [661/662] | Time: 114m 19s | loss: 0.3966 | oa:0.8712 | ma: 0.7003 | fa: 0.7773 | miou: 0.5906
+2018-12-19 17:46:14,650 - InfoLog - INFO - val starts...
+2018-12-19 17:47:44,937 - InfoLog - INFO - Val: [90/91] | Time: 115m 50s | loss: 0.2873 | oa:0.9051 | ma: 0.7735 | fa: 0.8422 | miou: 0.6158
+2018-12-19 17:47:44,938 - InfoLog - INFO - ------
+2018-12-19 17:47:45,768 - InfoLog - INFO - ***Saving model***
+2018-12-19 17:47:45,769 - InfoLog - INFO - Epoch :4
+2018-12-19 17:47:52,407 - InfoLog - INFO - Train: [0/662] | Time: 115m 57s | loss: 0.4085 | oa:0.8849 | ma: 0.4925 | fa: 0.8418 | miou: 0.3024
+2018-12-19 17:56:06,027 - InfoLog - INFO - Train: [200/662] | Time: 124m 11s | loss: 0.3707 | oa:0.8786 | ma: 0.7303 | fa: 0.7879 | miou: 0.6264
+2018-12-19 18:04:20,140 - InfoLog - INFO - Train: [400/662] | Time: 132m 25s | loss: 0.3722 | oa:0.8783 | ma: 0.7294 | fa: 0.7878 | miou: 0.6224
+2018-12-19 18:12:31,324 - InfoLog - INFO - Train: [600/662] | Time: 140m 36s | loss: 0.3678 | oa:0.8798 | ma: 0.7282 | fa: 0.7902 | miou: 0.6212
+2018-12-19 18:15:00,391 - InfoLog - INFO - Train: [661/662] | Time: 143m 5s | loss: 0.3688 | oa:0.8794 | ma: 0.7275 | fa: 0.7896 | miou: 0.6204
+2018-12-19 18:15:00,892 - InfoLog - INFO - val starts...
+2018-12-19 18:16:32,427 - InfoLog - INFO - Val: [90/91] | Time: 144m 37s | loss: 0.2521 | oa:0.9177 | ma: 0.7828 | fa: 0.8559 | miou: 0.6560
+2018-12-19 18:16:32,428 - InfoLog - INFO - ------
+2018-12-19 18:16:33,348 - InfoLog - INFO - ***Saving model***
+2018-12-19 18:16:33,349 - InfoLog - INFO - Epoch :5
+2018-12-19 18:16:40,126 - InfoLog - INFO - Train: [0/662] | Time: 144m 45s | loss: 0.3349 | oa:0.9103 | ma: 0.7719 | fa: 0.8644 | miou: 0.4283
+2018-12-19 18:24:51,398 - InfoLog - INFO - Train: [200/662] | Time: 152m 56s | loss: 0.3285 | oa:0.8907 | ma: 0.7617 | fa: 0.8071 | miou: 0.6604
+2018-12-19 18:33:05,163 - InfoLog - INFO - Train: [400/662] | Time: 161m 10s | loss: 0.3269 | oa:0.8910 | ma: 0.7577 | fa: 0.8076 | miou: 0.6553
+2018-12-19 18:41:17,940 - InfoLog - INFO - Train: [600/662] | Time: 169m 23s | loss: 0.3301 | oa:0.8903 | ma: 0.7572 | fa: 0.8065 | miou: 0.6533
+2018-12-19 18:43:47,685 - InfoLog - INFO - Train: [661/662] | Time: 171m 53s | loss: 0.3282 | oa:0.8909 | ma: 0.7591 | fa: 0.8074 | miou: 0.6552
+2018-12-19 18:43:48,179 - InfoLog - INFO - val starts...
+2018-12-19 18:45:17,887 - InfoLog - INFO - Val: [90/91] | Time: 173m 23s | loss: 0.2888 | oa:0.9046 | ma: 0.7990 | fa: 0.8418 | miou: 0.6188
+2018-12-19 18:45:17,887 - InfoLog - INFO - Epoch :6
+2018-12-19 18:45:24,319 - InfoLog - INFO - Train: [0/662] | Time: 173m 29s | loss: 0.2189 | oa:0.9343 | ma: 0.8195 | fa: 0.8810 | miou: 0.6647
+2018-12-19 18:53:38,511 - InfoLog - INFO - Train: [200/662] | Time: 181m 43s | loss: 0.3003 | oa:0.8994 | ma: 0.7686 | fa: 0.8212 | miou: 0.6696
+2018-12-19 19:01:53,653 - InfoLog - INFO - Train: [400/662] | Time: 189m 59s | loss: 0.3030 | oa:0.8975 | ma: 0.7762 | fa: 0.8182 | miou: 0.6746
+2018-12-19 19:10:05,927 - InfoLog - INFO - Train: [600/662] | Time: 198m 11s | loss: 0.3046 | oa:0.8971 | ma: 0.7763 | fa: 0.8175 | miou: 0.6760
+2018-12-19 19:12:34,378 - InfoLog - INFO - Train: [661/662] | Time: 200m 39s | loss: 0.3054 | oa:0.8967 | ma: 0.7761 | fa: 0.8169 | miou: 0.6754
+2018-12-19 19:12:34,836 - InfoLog - INFO - val starts...
+2018-12-19 19:14:05,169 - InfoLog - INFO - Val: [90/91] | Time: 202m 10s | loss: 0.2509 | oa:0.9154 | ma: 0.7848 | fa: 0.8535 | miou: 0.6414
+2018-12-19 19:14:05,170 - InfoLog - INFO - Epoch :7
+2018-12-19 19:14:11,733 - InfoLog - INFO - Train: [0/662] | Time: 202m 17s | loss: 0.3911 | oa:0.8858 | ma: 0.5797 | fa: 0.8452 | miou: 0.3237
+2018-12-19 19:22:23,888 - InfoLog - INFO - Train: [200/662] | Time: 210m 29s | loss: 0.2779 | oa:0.9047 | ma: 0.7946 | fa: 0.8295 | miou: 0.7002
+2018-12-19 19:30:35,041 - InfoLog - INFO - Train: [400/662] | Time: 218m 40s | loss: 0.2840 | oa:0.9030 | ma: 0.7918 | fa: 0.8270 | miou: 0.6923
+2018-12-19 19:38:47,135 - InfoLog - INFO - Train: [600/662] | Time: 226m 52s | loss: 0.2929 | oa:0.9004 | ma: 0.7864 | fa: 0.8229 | miou: 0.6867
+2018-12-19 19:41:15,392 - InfoLog - INFO - Train: [661/662] | Time: 229m 20s | loss: 0.2945 | oa:0.9000 | ma: 0.7851 | fa: 0.8222 | miou: 0.6846
+2018-12-19 19:41:15,887 - InfoLog - INFO - val starts...
+2018-12-19 19:42:46,867 - InfoLog - INFO - Val: [90/91] | Time: 230m 52s | loss: 0.2559 | oa:0.9157 | ma: 0.8055 | fa: 0.8566 | miou: 0.6596
+2018-12-19 19:42:46,868 - InfoLog - INFO - ------
+2018-12-19 19:42:47,708 - InfoLog - INFO - ***Saving model***
+2018-12-19 19:42:47,709 - InfoLog - INFO - Epoch :8
+2018-12-19 19:42:54,642 - InfoLog - INFO - Train: [0/662] | Time: 231m 0s | loss: 0.3521 | oa:0.8671 | ma: 0.6937 | fa: 0.7852 | miou: 0.4695
+2018-12-19 19:51:09,809 - InfoLog - INFO - Train: [200/662] | Time: 239m 15s | loss: 0.2814 | oa:0.9036 | ma: 0.7925 | fa: 0.8277 | miou: 0.6928
+2018-12-19 19:59:35,578 - InfoLog - INFO - Train: [400/662] | Time: 247m 41s | loss: 0.2923 | oa:0.9012 | ma: 0.7855 | fa: 0.8240 | miou: 0.6834
+2018-12-19 20:08:11,457 - InfoLog - INFO - Train: [600/662] | Time: 256m 16s | loss: 0.2938 | oa:0.9009 | ma: 0.7850 | fa: 0.8235 | miou: 0.6841
+2018-12-19 20:10:40,371 - InfoLog - INFO - Train: [661/662] | Time: 258m 45s | loss: 0.2923 | oa:0.9012 | ma: 0.7866 | fa: 0.8240 | miou: 0.6859
+2018-12-19 20:10:40,878 - InfoLog - INFO - val starts...
+2018-12-19 20:12:11,175 - InfoLog - INFO - Val: [90/91] | Time: 260m 16s | loss: 0.2336 | oa:0.9227 | ma: 0.8407 | fa: 0.8675 | miou: 0.6874
+2018-12-19 20:12:11,177 - InfoLog - INFO - ------
+2018-12-19 20:12:11,998 - InfoLog - INFO - ***Saving model***
+2018-12-19 20:12:11,999 - InfoLog - INFO - Epoch :9
+2018-12-19 20:12:18,000 - InfoLog - INFO - Train: [0/662] | Time: 260m 23s | loss: 0.2456 | oa:0.9154 | ma: 0.8427 | fa: 0.8537 | miou: 0.6515
+2018-12-19 20:20:45,468 - InfoLog - INFO - Train: [200/662] | Time: 268m 50s | loss: 0.2572 | oa:0.9115 | ma: 0.8171 | fa: 0.8407 | miou: 0.7251
+2018-12-19 20:29:01,046 - InfoLog - INFO - Train: [400/662] | Time: 277m 6s | loss: 0.2610 | oa:0.9111 | ma: 0.8170 | fa: 0.8399 | miou: 0.7238
+2018-12-19 20:37:15,506 - InfoLog - INFO - Train: [600/662] | Time: 285m 20s | loss: 0.2582 | oa:0.9114 | ma: 0.8180 | fa: 0.8404 | miou: 0.7264
+2018-12-19 20:39:44,740 - InfoLog - INFO - Train: [661/662] | Time: 287m 50s | loss: 0.2563 | oa:0.9119 | ma: 0.8182 | fa: 0.8412 | miou: 0.7261
+2018-12-19 20:39:45,246 - InfoLog - INFO - val starts...
+2018-12-19 20:41:15,486 - InfoLog - INFO - Val: [90/91] | Time: 289m 20s | loss: 0.2205 | oa:0.9270 | ma: 0.8248 | fa: 0.8722 | miou: 0.6912
+2018-12-19 20:41:15,487 - InfoLog - INFO - ------
+2018-12-19 20:41:16,276 - InfoLog - INFO - ***Saving model***
+2018-12-19 20:41:16,277 - InfoLog - INFO - Epoch :10
+2018-12-19 20:41:23,197 - InfoLog - INFO - Train: [0/662] | Time: 289m 28s | loss: 0.2499 | oa:0.8943 | ma: 0.7220 | fa: 0.8149 | miou: 0.6164
+2018-12-19 20:49:36,870 - InfoLog - INFO - Train: [200/662] | Time: 297m 42s | loss: 0.2499 | oa:0.9130 | ma: 0.8123 | fa: 0.8435 | miou: 0.7179
+2018-12-19 20:57:50,508 - InfoLog - INFO - Train: [400/662] | Time: 305m 55s | loss: 0.2508 | oa:0.9129 | ma: 0.8125 | fa: 0.8432 | miou: 0.7180
+2018-12-19 21:06:04,700 - InfoLog - INFO - Train: [600/662] | Time: 314m 10s | loss: 0.2468 | oa:0.9144 | ma: 0.8172 | fa: 0.8455 | miou: 0.7246
+2018-12-19 21:08:33,678 - InfoLog - INFO - Train: [661/662] | Time: 316m 39s | loss: 0.2486 | oa:0.9137 | ma: 0.8164 | fa: 0.8443 | miou: 0.7237
+2018-12-19 21:08:34,187 - InfoLog - INFO - val starts...
+2018-12-19 21:10:05,790 - InfoLog - INFO - Val: [90/91] | Time: 318m 11s | loss: 0.2209 | oa:0.9274 | ma: 0.7977 | fa: 0.8722 | miou: 0.6934
+2018-12-19 21:10:06,937 - InfoLog - INFO - ------
+2018-12-19 21:10:07,749 - InfoLog - INFO - ***Saving model***
+2018-12-19 21:10:07,750 - InfoLog - INFO - Epoch :11
+2018-12-19 21:10:14,472 - InfoLog - INFO - Train: [0/662] | Time: 318m 19s | loss: 0.2626 | oa:0.8951 | ma: 0.7179 | fa: 0.8387 | miou: 0.4647
+2018-12-19 21:18:31,373 - InfoLog - INFO - Train: [200/662] | Time: 326m 36s | loss: 0.2380 | oa:0.9180 | ma: 0.8343 | fa: 0.8513 | miou: 0.7457
+2018-12-19 21:26:49,773 - InfoLog - INFO - Train: [400/662] | Time: 334m 55s | loss: 0.2264 | oa:0.9216 | ma: 0.8399 | fa: 0.8573 | miou: 0.7530
+2018-12-19 21:35:06,773 - InfoLog - INFO - Train: [600/662] | Time: 343m 12s | loss: 0.2253 | oa:0.9218 | ma: 0.8422 | fa: 0.8577 | miou: 0.7553
+2018-12-19 21:37:37,106 - InfoLog - INFO - Train: [661/662] | Time: 345m 42s | loss: 0.2262 | oa:0.9216 | ma: 0.8419 | fa: 0.8572 | miou: 0.7549
+2018-12-19 21:37:37,600 - InfoLog - INFO - val starts...
+2018-12-19 21:39:07,345 - InfoLog - INFO - Val: [90/91] | Time: 347m 12s | loss: 0.2283 | oa:0.9254 | ma: 0.8305 | fa: 0.8712 | miou: 0.6881
+2018-12-19 21:39:07,346 - InfoLog - INFO - Epoch :12
+2018-12-19 21:39:13,567 - InfoLog - INFO - Train: [0/662] | Time: 347m 19s | loss: 0.2444 | oa:0.9156 | ma: 0.8653 | fa: 0.8503 | miou: 0.6470
+2018-12-19 21:47:25,899 - InfoLog - INFO - Train: [200/662] | Time: 355m 31s | loss: 0.2027 | oa:0.9300 | ma: 0.8612 | fa: 0.8715 | miou: 0.7794
+2018-12-19 21:55:38,415 - InfoLog - INFO - Train: [400/662] | Time: 363m 43s | loss: 0.2090 | oa:0.9279 | ma: 0.8580 | fa: 0.8678 | miou: 0.7764
+2018-12-19 22:03:49,584 - InfoLog - INFO - Train: [600/662] | Time: 371m 55s | loss: 0.2109 | oa:0.9266 | ma: 0.8547 | fa: 0.8657 | miou: 0.7723
+2018-12-19 22:06:18,429 - InfoLog - INFO - Train: [661/662] | Time: 374m 23s | loss: 0.2117 | oa:0.9263 | ma: 0.8543 | fa: 0.8653 | miou: 0.7714
+2018-12-19 22:06:18,931 - InfoLog - INFO - val starts...
+2018-12-19 22:07:50,228 - InfoLog - INFO - Val: [90/91] | Time: 375m 55s | loss: 0.2118 | oa:0.9275 | ma: 0.8348 | fa: 0.8750 | miou: 0.7023
+2018-12-19 22:07:50,228 - InfoLog - INFO - ------
+2018-12-19 22:07:51,088 - InfoLog - INFO - ***Saving model***
+2018-12-19 22:07:51,089 - InfoLog - INFO - Epoch :13
+2018-12-19 22:07:57,574 - InfoLog - INFO - Train: [0/662] | Time: 376m 3s | loss: 0.1934 | oa:0.9176 | ma: 0.7431 | fa: 0.8673 | miou: 0.5667
+2018-12-19 22:16:10,178 - InfoLog - INFO - Train: [200/662] | Time: 384m 15s | loss: 0.1905 | oa:0.9329 | ma: 0.8659 | fa: 0.8763 | miou: 0.7872
+2018-12-19 22:24:23,021 - InfoLog - INFO - Train: [400/662] | Time: 392m 28s | loss: 0.1955 | oa:0.9308 | ma: 0.8615 | fa: 0.8728 | miou: 0.7819
+2018-12-19 22:32:34,978 - InfoLog - INFO - Train: [600/662] | Time: 400m 40s | loss: 0.2043 | oa:0.9281 | ma: 0.8571 | fa: 0.8683 | miou: 0.7756
+2018-12-19 22:35:03,964 - InfoLog - INFO - Train: [661/662] | Time: 403m 9s | loss: 0.2055 | oa:0.9277 | ma: 0.8562 | fa: 0.8676 | miou: 0.7745
+2018-12-19 22:35:04,453 - InfoLog - INFO - val starts...
+2018-12-19 22:36:34,293 - InfoLog - INFO - Val: [90/91] | Time: 404m 39s | loss: 0.2212 | oa:0.9289 | ma: 0.8373 | fa: 0.8769 | miou: 0.7011
+2018-12-19 22:36:34,293 - InfoLog - INFO - Epoch :14
+2018-12-19 22:36:41,149 - InfoLog - INFO - Train: [0/662] | Time: 404m 46s | loss: 0.2038 | oa:0.9196 | ma: 0.8718 | fa: 0.8577 | miou: 0.5020
+2018-12-19 22:44:53,854 - InfoLog - INFO - Train: [200/662] | Time: 412m 59s | loss: 0.1855 | oa:0.9343 | ma: 0.8716 | fa: 0.8790 | miou: 0.7959
+2018-12-19 22:53:06,681 - InfoLog - INFO - Train: [400/662] | Time: 421m 12s | loss: 0.1893 | oa:0.9331 | ma: 0.8687 | fa: 0.8768 | miou: 0.7907
+2018-12-19 23:01:17,994 - InfoLog - INFO - Train: [600/662] | Time: 429m 23s | loss: 0.1899 | oa:0.9331 | ma: 0.8696 | fa: 0.8768 | miou: 0.7918
+2018-12-19 23:03:46,042 - InfoLog - INFO - Train: [661/662] | Time: 431m 51s | loss: 0.1889 | oa:0.9334 | ma: 0.8708 | fa: 0.8773 | miou: 0.7934
+2018-12-19 23:03:46,525 - InfoLog - INFO - val starts...
+2018-12-19 23:05:17,455 - InfoLog - INFO - Val: [90/91] | Time: 433m 22s | loss: 0.2029 | oa:0.9373 | ma: 0.8155 | fa: 0.8860 | miou: 0.7206
+2018-12-19 23:05:17,456 - InfoLog - INFO - ------
+2018-12-19 23:05:18,301 - InfoLog - INFO - ***Saving model***
+2018-12-19 23:05:18,302 - InfoLog - INFO - Epoch :15
+2018-12-19 23:05:25,258 - InfoLog - INFO - Train: [0/662] | Time: 433m 30s | loss: 0.1689 | oa:0.9409 | ma: 0.7494 | fa: 0.8904 | miou: 0.6742
+2018-12-19 23:13:34,972 - InfoLog - INFO - Train: [200/662] | Time: 441m 40s | loss: 0.1694 | oa:0.9403 | ma: 0.8866 | fa: 0.8890 | miou: 0.8161
+2018-12-19 23:21:45,824 - InfoLog - INFO - Train: [400/662] | Time: 449m 51s | loss: 0.1762 | oa:0.9378 | ma: 0.8811 | fa: 0.8848 | miou: 0.8076
+2018-12-19 23:29:56,324 - InfoLog - INFO - Train: [600/662] | Time: 458m 1s | loss: 0.1750 | oa:0.9380 | ma: 0.8826 | fa: 0.8851 | miou: 0.8090
+2018-12-19 23:32:23,704 - InfoLog - INFO - Train: [661/662] | Time: 460m 29s | loss: 0.1758 | oa:0.9378 | ma: 0.8814 | fa: 0.8848 | miou: 0.8079
+2018-12-19 23:32:24,219 - InfoLog - INFO - val starts...
+2018-12-19 23:33:53,819 - InfoLog - INFO - Val: [90/91] | Time: 461m 59s | loss: 0.2138 | oa:0.9343 | ma: 0.8184 | fa: 0.8833 | miou: 0.7135
+2018-12-19 23:33:53,820 - InfoLog - INFO - Epoch :16
+2018-12-19 23:34:00,525 - InfoLog - INFO - Train: [0/662] | Time: 462m 5s | loss: 0.1335 | oa:0.9520 | ma: 0.8324 | fa: 0.9124 | miou: 0.7470
+2018-12-19 23:42:11,745 - InfoLog - INFO - Train: [200/662] | Time: 470m 17s | loss: 0.1607 | oa:0.9433 | ma: 0.8879 | fa: 0.8943 | miou: 0.8184
+2018-12-19 23:50:23,483 - InfoLog - INFO - Train: [400/662] | Time: 478m 28s | loss: 0.1616 | oa:0.9423 | ma: 0.8876 | fa: 0.8926 | miou: 0.8173
+2018-12-19 23:58:33,800 - InfoLog - INFO - Train: [600/662] | Time: 486m 39s | loss: 0.1659 | oa:0.9408 | ma: 0.8860 | fa: 0.8900 | miou: 0.8150
+2018-12-20 00:01:01,986 - InfoLog - INFO - Train: [661/662] | Time: 489m 7s | loss: 0.1662 | oa:0.9407 | ma: 0.8866 | fa: 0.8899 | miou: 0.8156
+2018-12-20 00:01:02,505 - InfoLog - INFO - val starts...
+2018-12-20 00:02:31,665 - InfoLog - INFO - Val: [90/91] | Time: 490m 37s | loss: 0.1925 | oa:0.9397 | ma: 0.8464 | fa: 0.8929 | miou: 0.7334
+2018-12-20 00:02:31,666 - InfoLog - INFO - ------
+2018-12-20 00:02:32,463 - InfoLog - INFO - ***Saving model***
+2018-12-20 00:02:32,463 - InfoLog - INFO - Epoch :17
+2018-12-20 00:02:38,807 - InfoLog - INFO - Train: [0/662] | Time: 490m 44s | loss: 0.0996 | oa:0.9711 | ma: 0.8125 | fa: 0.9462 | miou: 0.6793
+2018-12-20 00:10:48,106 - InfoLog - INFO - Train: [200/662] | Time: 498m 53s | loss: 0.1566 | oa:0.9444 | ma: 0.8976 | fa: 0.8963 | miou: 0.8316
+2018-12-20 00:18:56,092 - InfoLog - INFO - Train: [400/662] | Time: 507m 1s | loss: 0.1585 | oa:0.9435 | ma: 0.8928 | fa: 0.8948 | miou: 0.8240
+2018-12-20 00:27:05,236 - InfoLog - INFO - Train: [600/662] | Time: 515m 10s | loss: 0.1587 | oa:0.9434 | ma: 0.8941 | fa: 0.8944 | miou: 0.8254
+2018-12-20 00:29:32,685 - InfoLog - INFO - Train: [661/662] | Time: 517m 38s | loss: 0.1586 | oa:0.9433 | ma: 0.8940 | fa: 0.8944 | miou: 0.8246
+2018-12-20 00:29:33,197 - InfoLog - INFO - val starts...
+2018-12-20 00:31:03,433 - InfoLog - INFO - Val: [90/91] | Time: 519m 8s | loss: 0.1865 | oa:0.9412 | ma: 0.8480 | fa: 0.8950 | miou: 0.7427
+2018-12-20 00:31:03,434 - InfoLog - INFO - ------
+2018-12-20 00:31:04,313 - InfoLog - INFO - ***Saving model***
+2018-12-20 00:31:04,314 - InfoLog - INFO - Epoch :18
+2018-12-20 00:31:10,495 - InfoLog - INFO - Train: [0/662] | Time: 519m 15s | loss: 0.1359 | oa:0.9568 | ma: 0.8242 | fa: 0.9217 | miou: 0.7064
+2018-12-20 00:39:23,664 - InfoLog - INFO - Train: [200/662] | Time: 527m 29s | loss: 0.1609 | oa:0.9421 | ma: 0.8913 | fa: 0.8923 | miou: 0.8203
+2018-12-20 00:47:33,564 - InfoLog - INFO - Train: [400/662] | Time: 535m 39s | loss: 0.1582 | oa:0.9433 | ma: 0.8930 | fa: 0.8943 | miou: 0.8240
+2018-12-20 00:55:43,666 - InfoLog - INFO - Train: [600/662] | Time: 543m 49s | loss: 0.1539 | oa:0.9449 | ma: 0.8978 | fa: 0.8970 | miou: 0.8303
+2018-12-20 00:58:11,446 - InfoLog - INFO - Train: [661/662] | Time: 546m 16s | loss: 0.1533 | oa:0.9450 | ma: 0.8979 | fa: 0.8972 | miou: 0.8307
+2018-12-20 00:58:11,955 - InfoLog - INFO - val starts...
+2018-12-20 00:59:41,572 - InfoLog - INFO - Val: [90/91] | Time: 547m 47s | loss: 0.1861 | oa:0.9424 | ma: 0.8531 | fa: 0.8985 | miou: 0.7483
+2018-12-20 00:59:41,573 - InfoLog - INFO - ------
+2018-12-20 00:59:42,361 - InfoLog - INFO - ***Saving model***
+2018-12-20 00:59:42,361 - InfoLog - INFO - Epoch :19
+2018-12-20 00:59:48,628 - InfoLog - INFO - Train: [0/662] | Time: 547m 54s | loss: 0.0798 | oa:0.9713 | ma: 0.8761 | fa: 0.9449 | miou: 0.5922
+2018-12-20 01:08:01,183 - InfoLog - INFO - Train: [200/662] | Time: 556m 6s | loss: 0.1448 | oa:0.9483 | ma: 0.9047 | fa: 0.9028 | miou: 0.8409
+2018-12-20 01:16:11,715 - InfoLog - INFO - Train: [400/662] | Time: 564m 17s | loss: 0.1438 | oa:0.9484 | ma: 0.9036 | fa: 0.9031 | miou: 0.8392
+2018-12-20 01:24:21,757 - InfoLog - INFO - Train: [600/662] | Time: 572m 27s | loss: 0.1445 | oa:0.9479 | ma: 0.9042 | fa: 0.9023 | miou: 0.8399
+2018-12-20 01:26:50,535 - InfoLog - INFO - Train: [661/662] | Time: 574m 55s | loss: 0.1444 | oa:0.9480 | ma: 0.9045 | fa: 0.9024 | miou: 0.8402
+2018-12-20 01:26:51,049 - InfoLog - INFO - val starts...
+2018-12-20 01:28:20,443 - InfoLog - INFO - Val: [90/91] | Time: 576m 25s | loss: 0.1876 | oa:0.9422 | ma: 0.8428 | fa: 0.8958 | miou: 0.7448
+2018-12-20 01:28:20,444 - InfoLog - INFO - Epoch :20
+2018-12-20 01:28:27,027 - InfoLog - INFO - Train: [0/662] | Time: 576m 32s | loss: 0.1443 | oa:0.9385 | ma: 0.9179 | fa: 0.8900 | miou: 0.8263
+2018-12-20 01:36:36,851 - InfoLog - INFO - Train: [200/662] | Time: 584m 42s | loss: 0.1359 | oa:0.9507 | ma: 0.9099 | fa: 0.9072 | miou: 0.8464
+2018-12-20 01:44:44,867 - InfoLog - INFO - Train: [400/662] | Time: 592m 50s | loss: 0.1371 | oa:0.9506 | ma: 0.9102 | fa: 0.9070 | miou: 0.8481
+2018-12-20 01:52:53,819 - InfoLog - INFO - Train: [600/662] | Time: 600m 59s | loss: 0.1378 | oa:0.9503 | ma: 0.9086 | fa: 0.9065 | miou: 0.8452
+2018-12-20 01:55:21,274 - InfoLog - INFO - Train: [661/662] | Time: 603m 26s | loss: 0.1375 | oa:0.9503 | ma: 0.9085 | fa: 0.9066 | miou: 0.8451
+2018-12-20 01:55:21,780 - InfoLog - INFO - val starts...
+2018-12-20 01:56:51,458 - InfoLog - INFO - Val: [90/91] | Time: 604m 56s | loss: 0.1790 | oa:0.9431 | ma: 0.8592 | fa: 0.8988 | miou: 0.7531
+2018-12-20 01:56:52,582 - InfoLog - INFO - ------
+2018-12-20 01:56:53,417 - InfoLog - INFO - ***Saving model***
+2018-12-20 01:56:53,418 - InfoLog - INFO - Epoch :21
+2018-12-20 01:56:59,760 - InfoLog - INFO - Train: [0/662] | Time: 605m 5s | loss: 0.1878 | oa:0.9329 | ma: 0.7794 | fa: 0.8755 | miou: 0.6350
+2018-12-20 02:05:11,167 - InfoLog - INFO - Train: [200/662] | Time: 613m 16s | loss: 0.1324 | oa:0.9519 | ma: 0.9108 | fa: 0.9093 | miou: 0.8505
+2018-12-20 02:13:24,573 - InfoLog - INFO - Train: [400/662] | Time: 621m 30s | loss: 0.1315 | oa:0.9523 | ma: 0.9129 | fa: 0.9100 | miou: 0.8524
+2018-12-20 02:21:36,995 - InfoLog - INFO - Train: [600/662] | Time: 629m 42s | loss: 0.1315 | oa:0.9521 | ma: 0.9125 | fa: 0.9098 | miou: 0.8522
+2018-12-20 02:24:07,179 - InfoLog - INFO - Train: [661/662] | Time: 632m 12s | loss: 0.1318 | oa:0.9521 | ma: 0.9128 | fa: 0.9097 | miou: 0.8526
+2018-12-20 02:24:07,702 - InfoLog - INFO - val starts...
+2018-12-20 02:25:38,471 - InfoLog - INFO - Val: [90/91] | Time: 633m 43s | loss: 0.1784 | oa:0.9445 | ma: 0.8565 | fa: 0.8997 | miou: 0.7566
+2018-12-20 02:25:38,472 - InfoLog - INFO - ------
+2018-12-20 02:25:39,176 - InfoLog - INFO - ***Saving model***
+2018-12-20 02:25:39,177 - InfoLog - INFO - Epoch :22
+2018-12-20 02:25:46,097 - InfoLog - INFO - Train: [0/662] | Time: 633m 51s | loss: 0.1218 | oa:0.9577 | ma: 0.8230 | fa: 0.9207 | miou: 0.6929
+2018-12-20 02:33:55,862 - InfoLog - INFO - Train: [200/662] | Time: 642m 1s | loss: 0.1223 | oa:0.9556 | ma: 0.9208 | fa: 0.9158 | miou: 0.8654
+2018-12-20 02:42:05,543 - InfoLog - INFO - Train: [400/662] | Time: 650m 10s | loss: 0.1216 | oa:0.9560 | ma: 0.9223 | fa: 0.9166 | miou: 0.8670
+2018-12-20 02:50:14,990 - InfoLog - INFO - Train: [600/662] | Time: 658m 20s | loss: 0.1242 | oa:0.9551 | ma: 0.9204 | fa: 0.9150 | miou: 0.8633
+2018-12-20 02:52:42,990 - InfoLog - INFO - Train: [661/662] | Time: 660m 48s | loss: 0.1242 | oa:0.9552 | ma: 0.9200 | fa: 0.9151 | miou: 0.8627
+2018-12-20 02:52:43,509 - InfoLog - INFO - val starts...
+2018-12-20 02:54:12,815 - InfoLog - INFO - Val: [90/91] | Time: 662m 18s | loss: 0.1717 | oa:0.9473 | ma: 0.8621 | fa: 0.9051 | miou: 0.7631
+2018-12-20 02:54:12,816 - InfoLog - INFO - ------
+2018-12-20 02:54:13,639 - InfoLog - INFO - ***Saving model***
+2018-12-20 02:54:13,639 - InfoLog - INFO - Epoch :23
+2018-12-20 02:54:20,114 - InfoLog - INFO - Train: [0/662] | Time: 662m 25s | loss: 0.1289 | oa:0.9501 | ma: 0.8595 | fa: 0.9068 | miou: 0.8023
+2018-12-20 03:02:29,001 - InfoLog - INFO - Train: [200/662] | Time: 670m 34s | loss: 0.1174 | oa:0.9575 | ma: 0.9269 | fa: 0.9193 | miou: 0.8712
+2018-12-20 03:10:37,819 - InfoLog - INFO - Train: [400/662] | Time: 678m 43s | loss: 0.1177 | oa:0.9570 | ma: 0.9267 | fa: 0.9184 | miou: 0.8714
+2018-12-20 03:18:46,356 - InfoLog - INFO - Train: [600/662] | Time: 686m 51s | loss: 0.1176 | oa:0.9572 | ma: 0.9263 | fa: 0.9187 | miou: 0.8711
+2018-12-20 03:21:13,405 - InfoLog - INFO - Train: [661/662] | Time: 689m 18s | loss: 0.1175 | oa:0.9572 | ma: 0.9265 | fa: 0.9188 | miou: 0.8711
+2018-12-20 03:21:13,910 - InfoLog - INFO - val starts...
+2018-12-20 03:22:43,763 - InfoLog - INFO - Val: [90/91] | Time: 690m 49s | loss: 0.1676 | oa:0.9488 | ma: 0.8699 | fa: 0.9081 | miou: 0.7726
+2018-12-20 03:22:43,764 - InfoLog - INFO - ------
+2018-12-20 03:22:44,680 - InfoLog - INFO - ***Saving model***
+2018-12-20 03:22:44,681 - InfoLog - INFO - Epoch :24
+2018-12-20 03:22:51,439 - InfoLog - INFO - Train: [0/662] | Time: 690m 56s | loss: 0.1118 | oa:0.9603 | ma: 0.7799 | fa: 0.9248 | miou: 0.6888
+2018-12-20 03:31:00,752 - InfoLog - INFO - Train: [200/662] | Time: 699m 6s | loss: 0.1108 | oa:0.9595 | ma: 0.9276 | fa: 0.9230 | miou: 0.8754
+2018-12-20 03:39:11,290 - InfoLog - INFO - Train: [400/662] | Time: 707m 16s | loss: 0.1117 | oa:0.9593 | ma: 0.9278 | fa: 0.9225 | miou: 0.8756
+2018-12-20 03:47:21,853 - InfoLog - INFO - Train: [600/662] | Time: 715m 27s | loss: 0.1125 | oa:0.9589 | ma: 0.9273 | fa: 0.9220 | miou: 0.8743
+2018-12-20 03:49:50,264 - InfoLog - INFO - Train: [661/662] | Time: 717m 55s | loss: 0.1128 | oa:0.9588 | ma: 0.9273 | fa: 0.9216 | miou: 0.8742
+2018-12-20 03:49:50,768 - InfoLog - INFO - val starts...
+2018-12-20 03:51:20,352 - InfoLog - INFO - Val: [90/91] | Time: 719m 25s | loss: 0.1722 | oa:0.9474 | ma: 0.8657 | fa: 0.9057 | miou: 0.7660
+2018-12-20 03:51:20,353 - InfoLog - INFO - Epoch :25
+2018-12-20 03:51:26,547 - InfoLog - INFO - Train: [0/662] | Time: 719m 31s | loss: 0.1072 | oa:0.9627 | ma: 0.8748 | fa: 0.9286 | miou: 0.8161
+2018-12-20 03:59:38,350 - InfoLog - INFO - Train: [200/662] | Time: 727m 43s | loss: 0.1085 | oa:0.9599 | ma: 0.9288 | fa: 0.9238 | miou: 0.8742
+2018-12-20 04:07:48,504 - InfoLog - INFO - Train: [400/662] | Time: 735m 53s | loss: 0.1114 | oa:0.9591 | ma: 0.9280 | fa: 0.9223 | miou: 0.8736
+2018-12-20 04:15:58,547 - InfoLog - INFO - Train: [600/662] | Time: 744m 3s | loss: 0.1107 | oa:0.9594 | ma: 0.9287 | fa: 0.9229 | miou: 0.8743
+2018-12-20 04:18:26,870 - InfoLog - INFO - Train: [661/662] | Time: 746m 32s | loss: 0.1113 | oa:0.9592 | ma: 0.9282 | fa: 0.9224 | miou: 0.8741
+2018-12-20 04:18:27,378 - InfoLog - INFO - val starts...
+2018-12-20 04:19:56,822 - InfoLog - INFO - Val: [90/91] | Time: 748m 2s | loss: 0.1661 | oa:0.9496 | ma: 0.8734 | fa: 0.9091 | miou: 0.7752
+2018-12-20 04:19:56,823 - InfoLog - INFO - ------
+2018-12-20 04:19:57,740 - InfoLog - INFO - ***Saving model***
+2018-12-20 04:19:57,741 - InfoLog - INFO - Epoch :26
+2018-12-20 04:20:03,706 - InfoLog - INFO - Train: [0/662] | Time: 748m 9s | loss: 0.0867 | oa:0.9683 | ma: 0.8909 | fa: 0.9426 | miou: 0.6583
+2018-12-20 04:28:13,314 - InfoLog - INFO - Train: [200/662] | Time: 756m 18s | loss: 0.1063 | oa:0.9612 | ma: 0.9327 | fa: 0.9261 | miou: 0.8814
+2018-12-20 04:36:21,206 - InfoLog - INFO - Train: [400/662] | Time: 764m 26s | loss: 0.1065 | oa:0.9608 | ma: 0.9332 | fa: 0.9254 | miou: 0.8825
+2018-12-20 04:44:28,937 - InfoLog - INFO - Train: [600/662] | Time: 772m 34s | loss: 0.1072 | oa:0.9606 | ma: 0.9327 | fa: 0.9249 | miou: 0.8813
+2018-12-20 04:46:57,832 - InfoLog - INFO - Train: [661/662] | Time: 775m 3s | loss: 0.1073 | oa:0.9605 | ma: 0.9323 | fa: 0.9248 | miou: 0.8808
+2018-12-20 04:46:58,339 - InfoLog - INFO - val starts...
+2018-12-20 04:48:29,098 - InfoLog - INFO - Val: [90/91] | Time: 776m 34s | loss: 0.1765 | oa:0.9481 | ma: 0.8633 | fa: 0.9059 | miou: 0.7679
+2018-12-20 04:48:29,099 - InfoLog - INFO - Epoch :27
+2018-12-20 04:48:35,160 - InfoLog - INFO - Train: [0/662] | Time: 776m 40s | loss: 0.1164 | oa:0.9556 | ma: 0.8914 | fa: 0.9154 | miou: 0.8027
+2018-12-20 04:56:44,491 - InfoLog - INFO - Train: [200/662] | Time: 784m 49s | loss: 0.1005 | oa:0.9631 | ma: 0.9379 | fa: 0.9295 | miou: 0.8899
+2018-12-20 05:04:54,495 - InfoLog - INFO - Train: [400/662] | Time: 792m 59s | loss: 0.1023 | oa:0.9624 | ma: 0.9361 | fa: 0.9282 | miou: 0.8869
+2018-12-20 05:13:01,379 - InfoLog - INFO - Train: [600/662] | Time: 801m 6s | loss: 0.1030 | oa:0.9622 | ma: 0.9357 | fa: 0.9278 | miou: 0.8860
+2018-12-20 05:15:29,556 - InfoLog - INFO - Train: [661/662] | Time: 803m 34s | loss: 0.1030 | oa:0.9622 | ma: 0.9353 | fa: 0.9278 | miou: 0.8855
+2018-12-20 05:15:30,085 - InfoLog - INFO - val starts...
+2018-12-20 05:16:59,914 - InfoLog - INFO - Val: [90/91] | Time: 805m 5s | loss: 0.1673 | oa:0.9502 | ma: 0.8612 | fa: 0.9093 | miou: 0.7768
+2018-12-20 05:16:59,915 - InfoLog - INFO - ------
+2018-12-20 05:17:00,805 - InfoLog - INFO - ***Saving model***
+2018-12-20 05:17:00,806 - InfoLog - INFO - Epoch :28
+2018-12-20 05:17:07,989 - InfoLog - INFO - Train: [0/662] | Time: 805m 13s | loss: 0.0832 | oa:0.9699 | ma: 0.9295 | fa: 0.9441 | miou: 0.7895
+2018-12-20 05:25:17,484 - InfoLog - INFO - Train: [200/662] | Time: 813m 22s | loss: 0.1017 | oa:0.9626 | ma: 0.9342 | fa: 0.9286 | miou: 0.8848
+2018-12-20 05:33:27,086 - InfoLog - INFO - Train: [400/662] | Time: 821m 32s | loss: 0.1010 | oa:0.9631 | ma: 0.9349 | fa: 0.9296 | miou: 0.8861
+2018-12-20 05:41:39,449 - InfoLog - INFO - Train: [600/662] | Time: 829m 44s | loss: 0.1018 | oa:0.9629 | ma: 0.9348 | fa: 0.9292 | miou: 0.8861
+2018-12-20 05:44:07,479 - InfoLog - INFO - Train: [661/662] | Time: 832m 12s | loss: 0.1021 | oa:0.9627 | ma: 0.9353 | fa: 0.9288 | miou: 0.8863
+2018-12-20 05:44:07,998 - InfoLog - INFO - val starts...
+2018-12-20 05:45:38,263 - InfoLog - INFO - Val: [90/91] | Time: 833m 43s | loss: 0.1696 | oa:0.9490 | ma: 0.8673 | fa: 0.9084 | miou: 0.7713
+2018-12-20 05:45:38,264 - InfoLog - INFO - Epoch :29
+2018-12-20 05:45:44,395 - InfoLog - INFO - Train: [0/662] | Time: 833m 49s | loss: 0.0726 | oa:0.9735 | ma: 0.8458 | fa: 0.9497 | miou: 0.7315
+2018-12-20 05:53:55,147 - InfoLog - INFO - Train: [200/662] | Time: 842m 0s | loss: 0.1041 | oa:0.9617 | ma: 0.9348 | fa: 0.9269 | miou: 0.8850
+2018-12-20 06:02:05,235 - InfoLog - INFO - Train: [400/662] | Time: 850m 10s | loss: 0.1010 | oa:0.9629 | ma: 0.9361 | fa: 0.9290 | miou: 0.8877
+2018-12-20 06:10:14,360 - InfoLog - INFO - Train: [600/662] | Time: 858m 19s | loss: 0.0996 | oa:0.9634 | ma: 0.9377 | fa: 0.9300 | miou: 0.8891
+2018-12-20 06:12:41,836 - InfoLog - INFO - Train: [661/662] | Time: 860m 47s | loss: 0.0995 | oa:0.9634 | ma: 0.9377 | fa: 0.9300 | miou: 0.8891
+2018-12-20 06:12:42,325 - InfoLog - INFO - val starts...
+2018-12-20 06:14:12,042 - InfoLog - INFO - Val: [90/91] | Time: 862m 17s | loss: 0.1724 | oa:0.9501 | ma: 0.8645 | fa: 0.9096 | miou: 0.7753
+2018-12-20 06:14:12,043 - InfoLog - INFO - Epoch :30
+2018-12-20 06:14:18,524 - InfoLog - INFO - Train: [0/662] | Time: 862m 23s | loss: 0.0767 | oa:0.9701 | ma: 0.8734 | fa: 0.9438 | miou: 0.7186
+2018-12-20 06:22:27,725 - InfoLog - INFO - Train: [200/662] | Time: 870m 33s | loss: 0.0959 | oa:0.9647 | ma: 0.9388 | fa: 0.9324 | miou: 0.8915
+2018-12-20 06:30:37,257 - InfoLog - INFO - Train: [400/662] | Time: 878m 42s | loss: 0.0971 | oa:0.9642 | ma: 0.9388 | fa: 0.9314 | miou: 0.8914
+2018-12-20 06:38:45,023 - InfoLog - INFO - Train: [600/662] | Time: 886m 50s | loss: 0.0964 | oa:0.9645 | ma: 0.9390 | fa: 0.9320 | miou: 0.8917
+2018-12-20 06:41:13,540 - InfoLog - INFO - Train: [661/662] | Time: 889m 18s | loss: 0.0967 | oa:0.9643 | ma: 0.9388 | fa: 0.9316 | miou: 0.8916
+2018-12-20 06:41:14,045 - InfoLog - INFO - val starts...
+2018-12-20 06:42:43,946 - InfoLog - INFO - Val: [90/91] | Time: 890m 49s | loss: 0.1681 | oa:0.9509 | ma: 0.8771 | fa: 0.9112 | miou: 0.7815
+2018-12-20 06:42:45,080 - InfoLog - INFO - ------
+2018-12-20 06:42:45,843 - InfoLog - INFO - ***Saving model***
+2018-12-20 06:42:45,844 - InfoLog - INFO - Epoch :31
+2018-12-20 06:42:52,583 - InfoLog - INFO - Train: [0/662] | Time: 890m 58s | loss: 0.1176 | oa:0.9517 | ma: 0.9010 | fa: 0.9101 | miou: 0.8309
+2018-12-20 06:51:07,646 - InfoLog - INFO - Train: [200/662] | Time: 899m 13s | loss: 0.0972 | oa:0.9639 | ma: 0.9378 | fa: 0.9310 | miou: 0.8891
+2018-12-20 06:59:22,284 - InfoLog - INFO - Train: [400/662] | Time: 907m 27s | loss: 0.0956 | oa:0.9646 | ma: 0.9387 | fa: 0.9322 | miou: 0.8907
+2018-12-20 07:07:36,866 - InfoLog - INFO - Train: [600/662] | Time: 915m 42s | loss: 0.0950 | oa:0.9649 | ma: 0.9398 | fa: 0.9328 | miou: 0.8927
+2018-12-20 07:10:06,300 - InfoLog - INFO - Train: [661/662] | Time: 918m 11s | loss: 0.0953 | oa:0.9648 | ma: 0.9399 | fa: 0.9326 | miou: 0.8926
+2018-12-20 07:10:06,793 - InfoLog - INFO - val starts...
+2018-12-20 07:11:37,774 - InfoLog - INFO - Val: [90/91] | Time: 919m 43s | loss: 0.1700 | oa:0.9512 | ma: 0.8624 | fa: 0.9113 | miou: 0.7779
+2018-12-20 07:11:37,775 - InfoLog - INFO - Epoch :32
+2018-12-20 07:11:44,619 - InfoLog - INFO - Train: [0/662] | Time: 919m 50s | loss: 0.0973 | oa:0.9644 | ma: 0.9085 | fa: 0.9396 | miou: 0.7528
+2018-12-20 07:19:53,262 - InfoLog - INFO - Train: [200/662] | Time: 927m 58s | loss: 0.0958 | oa:0.9647 | ma: 0.9398 | fa: 0.9325 | miou: 0.8937
+2018-12-20 07:28:01,545 - InfoLog - INFO - Train: [400/662] | Time: 936m 6s | loss: 0.0935 | oa:0.9655 | ma: 0.9413 | fa: 0.9339 | miou: 0.8951
+2018-12-20 07:36:10,881 - InfoLog - INFO - Train: [600/662] | Time: 944m 16s | loss: 0.0926 | oa:0.9658 | ma: 0.9412 | fa: 0.9344 | miou: 0.8953
+2018-12-20 07:38:39,312 - InfoLog - INFO - Train: [661/662] | Time: 946m 44s | loss: 0.0929 | oa:0.9657 | ma: 0.9415 | fa: 0.9342 | miou: 0.8957
+2018-12-20 07:38:39,823 - InfoLog - INFO - val starts...
+2018-12-20 07:40:10,372 - InfoLog - INFO - Val: [90/91] | Time: 948m 15s | loss: 0.1716 | oa:0.9513 | ma: 0.8594 | fa: 0.9110 | miou: 0.7802
+2018-12-20 07:40:10,372 - InfoLog - INFO - Epoch :33
+2018-12-20 07:40:16,571 - InfoLog - INFO - Train: [0/662] | Time: 948m 22s | loss: 0.1010 | oa:0.9608 | ma: 0.8908 | fa: 0.9301 | miou: 0.6137
+2018-12-20 07:48:26,080 - InfoLog - INFO - Train: [200/662] | Time: 956m 31s | loss: 0.0954 | oa:0.9644 | ma: 0.9408 | fa: 0.9320 | miou: 0.8920
+2018-12-20 07:56:36,217 - InfoLog - INFO - Train: [400/662] | Time: 964m 41s | loss: 0.0945 | oa:0.9650 | ma: 0.9411 | fa: 0.9331 | miou: 0.8940
+2018-12-20 08:04:47,119 - InfoLog - INFO - Train: [600/662] | Time: 972m 52s | loss: 0.0939 | oa:0.9653 | ma: 0.9420 | fa: 0.9335 | miou: 0.8953
+2018-12-20 08:07:15,522 - InfoLog - INFO - Train: [661/662] | Time: 975m 20s | loss: 0.0935 | oa:0.9655 | ma: 0.9424 | fa: 0.9339 | miou: 0.8959
+2018-12-20 08:07:16,040 - InfoLog - INFO - val starts...
+2018-12-20 08:08:45,995 - InfoLog - INFO - Val: [90/91] | Time: 976m 51s | loss: 0.1724 | oa:0.9513 | ma: 0.8676 | fa: 0.9117 | miou: 0.7790
+2018-12-20 08:08:45,996 - InfoLog - INFO - Epoch :34
+2018-12-20 08:08:52,724 - InfoLog - INFO - Train: [0/662] | Time: 976m 58s | loss: 0.1413 | oa:0.9502 | ma: 0.8362 | fa: 0.9059 | miou: 0.7879
+2018-12-20 08:17:02,608 - InfoLog - INFO - Train: [200/662] | Time: 985m 8s | loss: 0.0918 | oa:0.9661 | ma: 0.9417 | fa: 0.9349 | miou: 0.8982
+2018-12-20 08:25:12,413 - InfoLog - INFO - Train: [400/662] | Time: 993m 17s | loss: 0.0913 | oa:0.9661 | ma: 0.9429 | fa: 0.9349 | miou: 0.8986
+2018-12-20 08:33:23,632 - InfoLog - INFO - Train: [600/662] | Time: 1001m 29s | loss: 0.0907 | oa:0.9663 | ma: 0.9432 | fa: 0.9353 | miou: 0.8983
+2018-12-20 08:35:51,456 - InfoLog - INFO - Train: [661/662] | Time: 1003m 56s | loss: 0.0906 | oa:0.9663 | ma: 0.9433 | fa: 0.9353 | miou: 0.8984
+2018-12-20 08:35:51,969 - InfoLog - INFO - val starts...
+2018-12-20 08:37:21,300 - InfoLog - INFO - Val: [90/91] | Time: 1005m 26s | loss: 0.1709 | oa:0.9518 | ma: 0.8688 | fa: 0.9126 | miou: 0.7817
+2018-12-20 08:37:21,300 - InfoLog - INFO - ------
+2018-12-20 08:37:22,196 - InfoLog - INFO - ***Saving model***
+2018-12-20 08:37:22,198 - InfoLog - INFO - Epoch :35
+2018-12-20 08:37:28,995 - InfoLog - INFO - Train: [0/662] | Time: 1005m 34s | loss: 0.1149 | oa:0.9581 | ma: 0.8702 | fa: 0.9208 | miou: 0.7561
+2018-12-20 08:45:39,510 - InfoLog - INFO - Train: [200/662] | Time: 1013m 44s | loss: 0.0880 | oa:0.9671 | ma: 0.9450 | fa: 0.9368 | miou: 0.9008
+2018-12-20 08:53:49,089 - InfoLog - INFO - Train: [400/662] | Time: 1021m 54s | loss: 0.0893 | oa:0.9667 | ma: 0.9444 | fa: 0.9361 | miou: 0.9004
+2018-12-20 09:01:59,714 - InfoLog - INFO - Train: [600/662] | Time: 1030m 5s | loss: 0.0897 | oa:0.9666 | ma: 0.9436 | fa: 0.9360 | miou: 0.8992
+2018-12-20 09:04:28,536 - InfoLog - INFO - Train: [661/662] | Time: 1032m 33s | loss: 0.0896 | oa:0.9667 | ma: 0.9437 | fa: 0.9361 | miou: 0.8994
+2018-12-20 09:04:29,043 - InfoLog - INFO - val starts...
+2018-12-20 09:05:59,872 - InfoLog - INFO - Val: [90/91] | Time: 1034m 5s | loss: 0.1710 | oa:0.9518 | ma: 0.8698 | fa: 0.9126 | miou: 0.7811
+2018-12-20 09:05:59,872 - InfoLog - INFO - Epoch :36
+2018-12-20 09:06:07,011 - InfoLog - INFO - Train: [0/662] | Time: 1034m 12s | loss: 0.0793 | oa:0.9691 | ma: 0.9394 | fa: 0.9410 | miou: 0.8773
+2018-12-20 09:14:16,881 - InfoLog - INFO - Train: [200/662] | Time: 1042m 22s | loss: 0.0866 | oa:0.9680 | ma: 0.9455 | fa: 0.9385 | miou: 0.9025
+2018-12-20 09:22:28,677 - InfoLog - INFO - Train: [400/662] | Time: 1050m 34s | loss: 0.0883 | oa:0.9671 | ma: 0.9450 | fa: 0.9369 | miou: 0.9006
+2018-12-20 09:30:40,068 - InfoLog - INFO - Train: [600/662] | Time: 1058m 45s | loss: 0.0883 | oa:0.9672 | ma: 0.9449 | fa: 0.9371 | miou: 0.9006
+2018-12-20 09:33:09,455 - InfoLog - INFO - Train: [661/662] | Time: 1061m 14s | loss: 0.0886 | oa:0.9672 | ma: 0.9446 | fa: 0.9370 | miou: 0.9003
+2018-12-20 09:33:09,970 - InfoLog - INFO - val starts...
+2018-12-20 09:34:39,881 - InfoLog - INFO - Val: [90/91] | Time: 1062m 45s | loss: 0.1712 | oa:0.9518 | ma: 0.8678 | fa: 0.9124 | miou: 0.7812
+2018-12-20 09:34:39,882 - InfoLog - INFO - Epoch :37
+2018-12-20 09:34:47,030 - InfoLog - INFO - Train: [0/662] | Time: 1062m 52s | loss: 0.0837 | oa:0.9687 | ma: 0.9033 | fa: 0.9413 | miou: 0.7900
+2018-12-20 09:42:59,721 - InfoLog - INFO - Train: [200/662] | Time: 1071m 5s | loss: 0.0875 | oa:0.9674 | ma: 0.9465 | fa: 0.9374 | miou: 0.9022
+2018-12-20 09:51:11,088 - InfoLog - INFO - Train: [400/662] | Time: 1079m 16s | loss: 0.0891 | oa:0.9669 | ma: 0.9451 | fa: 0.9364 | miou: 0.9009
+2018-12-20 09:59:25,676 - InfoLog - INFO - Train: [600/662] | Time: 1087m 31s | loss: 0.0890 | oa:0.9669 | ma: 0.9450 | fa: 0.9364 | miou: 0.9005
+2018-12-20 10:01:54,490 - InfoLog - INFO - Train: [661/662] | Time: 1089m 59s | loss: 0.0885 | oa:0.9670 | ma: 0.9448 | fa: 0.9367 | miou: 0.9004
+2018-12-20 10:01:55,004 - InfoLog - INFO - val starts...
+2018-12-20 10:03:24,593 - InfoLog - INFO - Val: [90/91] | Time: 1091m 30s | loss: 0.1737 | oa:0.9512 | ma: 0.8752 | fa: 0.9118 | miou: 0.7810
+2018-12-20 10:03:24,593 - InfoLog - INFO - Epoch :38
+2018-12-20 10:03:30,698 - InfoLog - INFO - Train: [0/662] | Time: 1091m 36s | loss: 0.0845 | oa:0.9701 | ma: 0.8918 | fa: 0.9424 | miou: 0.8056
+2018-12-20 10:11:45,518 - InfoLog - INFO - Train: [200/662] | Time: 1099m 50s | loss: 0.0857 | oa:0.9681 | ma: 0.9465 | fa: 0.9388 | miou: 0.9030
+2018-12-20 10:19:58,412 - InfoLog - INFO - Train: [400/662] | Time: 1108m 3s | loss: 0.0858 | oa:0.9682 | ma: 0.9462 | fa: 0.9388 | miou: 0.9030
+2018-12-20 10:28:13,983 - InfoLog - INFO - Train: [600/662] | Time: 1116m 19s | loss: 0.0869 | oa:0.9678 | ma: 0.9464 | fa: 0.9381 | miou: 0.9027
+2018-12-20 10:30:43,380 - InfoLog - INFO - Train: [661/662] | Time: 1118m 48s | loss: 0.0870 | oa:0.9677 | ma: 0.9464 | fa: 0.9380 | miou: 0.9028
+2018-12-20 10:30:43,890 - InfoLog - INFO - val starts...
+2018-12-20 10:32:14,888 - InfoLog - INFO - Val: [90/91] | Time: 1120m 20s | loss: 0.1705 | oa:0.9516 | ma: 0.8674 | fa: 0.9120 | miou: 0.7807
+2018-12-20 10:32:14,889 - InfoLog - INFO - Epoch :39
+2018-12-20 10:32:21,041 - InfoLog - INFO - Train: [0/662] | Time: 1120m 26s | loss: 0.0837 | oa:0.9708 | ma: 0.8391 | fa: 0.9443 | miou: 0.7761
+2018-12-20 10:40:36,445 - InfoLog - INFO - Train: [200/662] | Time: 1128m 41s | loss: 0.0860 | oa:0.9680 | ma: 0.9457 | fa: 0.9386 | miou: 0.9019
+2018-12-20 10:48:51,668 - InfoLog - INFO - Train: [400/662] | Time: 1136m 57s | loss: 0.0878 | oa:0.9674 | ma: 0.9454 | fa: 0.9373 | miou: 0.9014
+2018-12-20 10:57:09,169 - InfoLog - INFO - Train: [600/662] | Time: 1145m 14s | loss: 0.0876 | oa:0.9674 | ma: 0.9455 | fa: 0.9375 | miou: 0.9011
+2018-12-20 10:59:38,825 - InfoLog - INFO - Train: [661/662] | Time: 1147m 44s | loss: 0.0876 | oa:0.9674 | ma: 0.9457 | fa: 0.9374 | miou: 0.9016
+2018-12-20 10:59:39,325 - InfoLog - INFO - val starts...
+2018-12-20 11:01:10,099 - InfoLog - INFO - Val: [90/91] | Time: 1149m 15s | loss: 0.1717 | oa:0.9520 | ma: 0.8670 | fa: 0.9128 | miou: 0.7815
+2018-12-20 11:01:10,100 - InfoLog - INFO - Epoch :40
+2018-12-20 11:01:16,210 - InfoLog - INFO - Train: [0/662] | Time: 1149m 21s | loss: 0.0824 | oa:0.9673 | ma: 0.8542 | fa: 0.9387 | miou: 0.7322
+2018-12-20 11:09:31,058 - InfoLog - INFO - Train: [200/662] | Time: 1157m 36s | loss: 0.0893 | oa:0.9667 | ma: 0.9476 | fa: 0.9360 | miou: 0.9028
+2018-12-20 11:17:45,277 - InfoLog - INFO - Train: [400/662] | Time: 1165m 50s | loss: 0.0873 | oa:0.9675 | ma: 0.9474 | fa: 0.9375 | miou: 0.9038
+2018-12-20 11:25:58,670 - InfoLog - INFO - Train: [600/662] | Time: 1174m 4s | loss: 0.0863 | oa:0.9679 | ma: 0.9469 | fa: 0.9383 | miou: 0.9036
+2018-12-20 11:28:28,924 - InfoLog - INFO - Train: [661/662] | Time: 1176m 34s | loss: 0.0866 | oa:0.9678 | ma: 0.9466 | fa: 0.9381 | miou: 0.9032
+2018-12-20 11:28:29,436 - InfoLog - INFO - val starts...
+2018-12-20 11:30:00,095 - InfoLog - INFO - Val: [90/91] | Time: 1178m 5s | loss: 0.1692 | oa:0.9522 | ma: 0.8690 | fa: 0.9131 | miou: 0.7821
+2018-12-20 11:30:01,249 - InfoLog - INFO - ------
+2018-12-20 11:30:01,998 - InfoLog - INFO - ***Saving model***
+2018-12-20 11:30:01,998 - InfoLog - INFO - Epoch :41
+2018-12-20 11:30:08,658 - InfoLog - INFO - Train: [0/662] | Time: 1178m 14s | loss: 0.0960 | oa:0.9657 | ma: 0.9400 | fa: 0.9345 | miou: 0.9001
+2018-12-20 11:38:27,669 - InfoLog - INFO - Train: [200/662] | Time: 1186m 33s | loss: 0.0845 | oa:0.9685 | ma: 0.9481 | fa: 0.9395 | miou: 0.9055
+2018-12-20 11:46:46,929 - InfoLog - INFO - Train: [400/662] | Time: 1194m 52s | loss: 0.0864 | oa:0.9678 | ma: 0.9464 | fa: 0.9382 | miou: 0.9034
+2018-12-20 11:55:05,253 - InfoLog - INFO - Train: [600/662] | Time: 1203m 10s | loss: 0.0870 | oa:0.9676 | ma: 0.9462 | fa: 0.9378 | miou: 0.9021
+2018-12-20 11:57:35,761 - InfoLog - INFO - Train: [661/662] | Time: 1205m 41s | loss: 0.0868 | oa:0.9677 | ma: 0.9465 | fa: 0.9380 | miou: 0.9026
+2018-12-20 11:57:36,263 - InfoLog - INFO - val starts...
+2018-12-20 11:59:06,456 - InfoLog - INFO - Val: [90/91] | Time: 1207m 11s | loss: 0.1689 | oa:0.9520 | ma: 0.8685 | fa: 0.9128 | miou: 0.7814
+2018-12-20 11:59:06,457 - InfoLog - INFO - Epoch :42
+2018-12-20 11:59:12,636 - InfoLog - INFO - Train: [0/662] | Time: 1207m 18s | loss: 0.0885 | oa:0.9678 | ma: 0.8215 | fa: 0.9404 | miou: 0.7220
+2018-12-20 12:07:29,383 - InfoLog - INFO - Train: [200/662] | Time: 1215m 34s | loss: 0.0870 | oa:0.9679 | ma: 0.9471 | fa: 0.9383 | miou: 0.9042
+2018-12-20 12:15:44,534 - InfoLog - INFO - Train: [400/662] | Time: 1223m 49s | loss: 0.0872 | oa:0.9676 | ma: 0.9464 | fa: 0.9378 | miou: 0.9032
+2018-12-20 12:23:59,704 - InfoLog - INFO - Train: [600/662] | Time: 1232m 5s | loss: 0.0866 | oa:0.9679 | ma: 0.9471 | fa: 0.9382 | miou: 0.9040
+2018-12-20 12:26:29,323 - InfoLog - INFO - Train: [661/662] | Time: 1234m 34s | loss: 0.0864 | oa:0.9679 | ma: 0.9467 | fa: 0.9383 | miou: 0.9036
+2018-12-20 12:26:29,828 - InfoLog - INFO - val starts...
+2018-12-20 12:27:59,781 - InfoLog - INFO - Val: [90/91] | Time: 1236m 5s | loss: 0.1715 | oa:0.9516 | ma: 0.8689 | fa: 0.9122 | miou: 0.7811
+2018-12-20 12:27:59,782 - InfoLog - INFO - Epoch :43
+2018-12-20 12:28:06,666 - InfoLog - INFO - Train: [0/662] | Time: 1236m 12s | loss: 0.0569 | oa:0.9792 | ma: 0.9522 | fa: 0.9598 | miou: 0.7402
+2018-12-20 12:36:18,433 - InfoLog - INFO - Train: [200/662] | Time: 1244m 23s | loss: 0.0846 | oa:0.9687 | ma: 0.9480 | fa: 0.9397 | miou: 0.9074
+2018-12-20 12:44:30,913 - InfoLog - INFO - Train: [400/662] | Time: 1252m 36s | loss: 0.0857 | oa:0.9681 | ma: 0.9473 | fa: 0.9387 | miou: 0.9045
+2018-12-20 12:52:43,471 - InfoLog - INFO - Train: [600/662] | Time: 1260m 48s | loss: 0.0855 | oa:0.9682 | ma: 0.9473 | fa: 0.9388 | miou: 0.9044
+2018-12-20 12:55:13,166 - InfoLog - INFO - Train: [661/662] | Time: 1263m 18s | loss: 0.0855 | oa:0.9682 | ma: 0.9474 | fa: 0.9389 | miou: 0.9041
+2018-12-20 12:55:13,662 - InfoLog - INFO - val starts...
+2018-12-20 12:56:44,975 - InfoLog - INFO - Val: [90/91] | Time: 1264m 50s | loss: 0.1704 | oa:0.9519 | ma: 0.8730 | fa: 0.9128 | miou: 0.7821
+2018-12-20 12:56:44,976 - InfoLog - INFO - Epoch :44
+2018-12-20 12:56:51,058 - InfoLog - INFO - Train: [0/662] | Time: 1264m 56s | loss: 0.0998 | oa:0.9646 | ma: 0.9609 | fa: 0.9328 | miou: 0.8432
+2018-12-20 13:05:04,780 - InfoLog - INFO - Train: [200/662] | Time: 1273m 10s | loss: 0.0844 | oa:0.9686 | ma: 0.9483 | fa: 0.9396 | miou: 0.9041
+2018-12-20 13:13:18,568 - InfoLog - INFO - Train: [400/662] | Time: 1281m 24s | loss: 0.0856 | oa:0.9682 | ma: 0.9460 | fa: 0.9388 | miou: 0.9029
+2018-12-20 13:21:31,933 - InfoLog - INFO - Train: [600/662] | Time: 1289m 37s | loss: 0.0864 | oa:0.9678 | ma: 0.9461 | fa: 0.9382 | miou: 0.9026
+2018-12-20 13:24:02,225 - InfoLog - INFO - Train: [661/662] | Time: 1292m 7s | loss: 0.0863 | oa:0.9678 | ma: 0.9458 | fa: 0.9382 | miou: 0.9024
+2018-12-20 13:24:02,742 - InfoLog - INFO - val starts...
+2018-12-20 13:25:33,644 - InfoLog - INFO - Val: [90/91] | Time: 1293m 39s | loss: 0.1709 | oa:0.9516 | ma: 0.8660 | fa: 0.9120 | miou: 0.7797
+2018-12-20 13:25:33,645 - InfoLog - INFO - per class iou: {0: 0.9480814842855035, 1: 0.9083707853249623, 2: 0.42941847697891083, 3: 0.8911966652175954, 4: 0.7151503436194974, 5: 0.8331339613315725, 6: 0.9342179284452429, 7: 0.8841335495405016, 8: 0.9129559569065165, 9: 0.41182346620807864, 10: 0.8589774283401731, 11: 0.6147801594566099, 12: 0.8759521277119147, 13: 0.8312757604443556, 14: 0.849794858329365, 15: 0.8607343505842987, 16: 0.621425857598794, 17: 0.855083976321538, 18: 0.5135081583792014, 19: 0.8567536259228579, 20: 0.7674932102467605}

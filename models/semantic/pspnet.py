@@ -22,8 +22,11 @@ class PSPNet(nn.Module):
         if hasattr(backend, 'low_features') and hasattr(backend, 'high_features') \
                 and hasattr(backend, 'lastconv_channel'):
             self.backend = backend
-        elif 'resne' in backend:
-            self.backend = ResnetBackend(backend, pretrained)
+        elif 'resnet' in backend:
+            ## in the future, I may retrain on os=16 (now without os)
+            self.backend = ResnetBackend(backend, os=None, pretrained=pretrained)
+        elif 'resnext' in backend:
+            self.backend = ResnetBackend(backend, os=None, pretrained=pretrained)
         else:
             raise NotImplementedError
 
@@ -80,7 +83,7 @@ class PSPNet(nn.Module):
 
 
 class ResnetBackend(nn.Module):
-    def __init__(self, backend='resnet18', pretrained='imagenet'):
+    def __init__(self, backend='resnet18', os=16, pretrained='imagenet'):
         '''
         :param backend: resnet<> or se_resnet<>
         '''
@@ -89,7 +92,10 @@ class ResnetBackend(nn.Module):
         if backend not in _all_resnet_models:
             raise NotImplementedError(f"{backend} must in {_all_resnet_models}")
 
-        _backend_model = backbone.__dict__[backend](pretrained=pretrained)
+        if 'se' in backend:
+            _backend_model = backbone.__dict__[backend](pretrained=pretrained)
+        else:
+            _backend_model = backbone.__dict__[backend](pretrained=pretrained, output_stride=os)
 
         if 'se' in backend:
             self.low_features = nn.Sequential(_backend_model.layer0,

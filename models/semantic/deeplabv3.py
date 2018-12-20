@@ -21,12 +21,20 @@ class DeepLabv3_plus(nn.Module):
         if hasattr(backend, 'low_features') and hasattr(backend, 'high_features') \
                 and hasattr(backend, 'lastconv_channel'):
             self.backend = backend
-        elif 'resne' in backend:
-            self.backend = ResnetBackend(backend, pretrained)
+        elif 'resnet' in backend:
+            self.backend = ResnetBackend(backend, os, pretrained)
+        elif 'resnext' in backend:
+            self.backend = ResnetBackend(backend, os=None, pretrained=pretrained)
+        elif 'mobilenet' in backend:
+            self.backend = MobileNetBackend(backend, os=os, pretrained=pretrained)
         else:
             raise NotImplementedError
 
-        self.aspp_out_channel = self.backend.lastconv_channel // 8
+        if hasattr(self.backend, 'interconv_channel'):
+            self.aspp_out_channel = self.backend.interconv_channel
+        else:
+            self.aspp_out_channel = self.backend.lastconv_channel // 8
+
         self.aspp_pooling = ASPPBlock(self.backend.lastconv_channel, self.aspp_out_channel, os)
 
         self.cbr_low = nn.Sequential(nn.Conv2d(self.aspp_out_channel, self.aspp_out_channel // 5,
@@ -75,7 +83,7 @@ class DeepLabv3_plus(nn.Module):
 
 
 class ResnetBackend(nn.Module):
-    def __init__(self, backend='resnet18', pretrained='imagenet'):
+    def __init__(self, backend='resnet18', os=16, pretrained='imagenet'):
         '''
         :param backend: resnet<> or se_resnet
         '''
@@ -84,7 +92,11 @@ class ResnetBackend(nn.Module):
         if backend not in _all_resnet_models:
             raise Exception(f"{backend} must in {_all_resnet_models}")
 
-        _backend_model = backbone.__dict__[backend](pretrained=pretrained)
+        if 'se' in backend:
+            _backend_model = backbone.__dict__[backend](pretrained=pretrained)
+        else:
+            _backend_model = backbone.__dict__[backend](pretrained=pretrained, output_stride=os)
+
         if 'se' in backend:
             self.low_features = nn.Sequential(_backend_model.layer0,
                                               _backend_model.layer1)
@@ -111,12 +123,37 @@ class ResnetBackend(nn.Module):
         return low_features, x
 
 
+class MobileNetBackend(nn.Module):
+    def __init__(self, backend='mobilenet_v2', os=16, pretrained='imagenet', width_mult=1.):
+        '''
+        :param backend: mobilenet_<>
+        '''
+        super(MobileNetBackend, self).__init__()
+        _all_mobilenet_backbones = backbone._all_mobilenet_backbones
+        if backend not in _all_mobilenet_backbones:
+            raise Exception(f"{backend} must in {_all_mobilenet_backbones}")
+
+        _backend_model = backbone.__dict__[backend](pretrained=pretrained, output_stride=os, width_mult=width_mult)
+
+        self.low_features = _backend_model.features[:4]
+
+        self.high_features = _backend_model.features[4:]
+
+        self.lastconv_channel = _backend_model.lastconv_channel
+        self.interconv_channel = _backend_model.interconv_channel
+
+    def forward(self, x):
+        low_features = self.low_features(x)
+        x = self.high_features(low_features)
+        return low_features, x
+
+
 if __name__ == '__main__':
     from torchsummary import summary
 
-    deeplabv3_ = DeepLabv3_plus(in_channels=3, num_classes=21, backend='resnet101', os=16).cuda()
-    print(summary(deeplabv3_, [3, 224, 224]))
+    deeplabv3_ = DeepLabv3_plus(in_channels=3, num_classes=21, backend='mobilenet_v2', os=16).cuda()
+    print(summary(deeplabv3_, [3, 513, 513]))
     print('Total params: ', sum(p.numel() for p in deeplabv3_.parameters() if p.requires_grad))
-    x = torch.randn(2, 3, 224, 224)
+    x = torch.randn(2, 3, 513, 513)
     out = deeplabv3_(x.cuda())
     print(out.size())

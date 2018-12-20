@@ -39,7 +39,7 @@ def main(img_path, ckpt_path, use_gpu):
     if isinstance(size, int):
         size = (int(size), int(size))
     img = Image.open(img_path).convert('RGB')
-    h, w = img.size
+    w, h = img.size
     img = img.resize(size, Image.BILINEAR)
     input = transform(img)
 
@@ -64,9 +64,9 @@ def main(img_path, ckpt_path, use_gpu):
                                labels=labels_array)
     predict_mask = Image.fromarray((predict_mask * 255).astype(np.uint8))
     fig, ax = plt.subplots(2)
-    ax[0].imshow(img.resize((h, w)))
+    ax[0].imshow(img.resize((w, h)))
     ax[0].axis('off')
-    ax[1].imshow(predict_mask.resize((h, w)))
+    ax[1].imshow(predict_mask.resize((w, h)))
     ax[1].axis('off')
     plt.show()
 
