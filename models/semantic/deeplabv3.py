@@ -27,6 +27,8 @@ class DeepLabv3_plus(nn.Module):
             self.backend = ResnetBackend(backend, os=None, pretrained=pretrained)
         elif 'mobilenet' in backend:
             self.backend = MobileNetBackend(backend, os=os, pretrained=pretrained)
+        elif 'shufflenet' in backend:
+            self.backend = ShuffleNetBackend(backend, os=os, pretrained=pretrained)
         else:
             raise NotImplementedError
 
@@ -138,6 +140,32 @@ class MobileNetBackend(nn.Module):
         self.low_features = _backend_model.features[:4]
 
         self.high_features = _backend_model.features[4:]
+
+        self.lastconv_channel = _backend_model.lastconv_channel
+        self.interconv_channel = _backend_model.interconv_channel
+
+    def forward(self, x):
+        low_features = self.low_features(x)
+        x = self.high_features(low_features)
+        return low_features, x
+
+
+class ShuffleNetBackend(nn.Module):
+    def __init__(self, backend='shufflenet_v2', os=16, pretrained='imagenet', width_mult=1.):
+        '''
+        :param backend: mobilenet_<>
+        '''
+        super(ShuffleNetBackend, self).__init__()
+        _all_shufflenet_backbones = backbone._all_shufflenet_backbones
+        if backend not in _all_shufflenet_backbones:
+            raise Exception(f"{backend} must in {_all_shufflenet_backbones}")
+
+        _backend_model = backbone.__dict__[backend](pretrained=pretrained, output_stride=os, width_mult=width_mult)
+
+        self.low_features = nn.Sequential(_backend_model.conv1,
+                                          _backend_model.maxpool)
+
+        self.high_features = _backend_model.features
 
         self.lastconv_channel = _backend_model.lastconv_channel
         self.interconv_channel = _backend_model.interconv_channel

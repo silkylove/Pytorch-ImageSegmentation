@@ -43,8 +43,8 @@ For MobileNet_V2 with Deeplabv3+:
 
 |   Backbone  |   Dataset   |train/val OS| mIoU paper| mIoU repo|      Speed     |
 | :-----------| :----------:|:----------:|:---------:|:--------:|:--------------:|
-| MobileNet_V2|   VOC2012   |     16     |     --    |  69.39%  |  13ms(512x512) |
-| MobileNet_V2| CitySpcases |     16     |     --    |  65.27%  |  23ms(512x1024)|
+| MobileNet_V2|   VOC2012   |     16     |     --    |  69.39%  |  10ms(512x512) |
+| MobileNet_V2| CitySpcases |     16     |     --    |  65.27%  |  15ms(512x1024)|
 
 PSPNet on VOC2012 validation with 16 batchsize and 30K iterations in 10 hours.
 The pretrained model can be got from [pspnet](https://drive.google.com/open?id=1sp4U6opqxlGIeBVC92MSp2jq_Ig7VhvQ)
