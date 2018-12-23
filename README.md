@@ -25,9 +25,9 @@ to see the training log.
 - [x] Resnet backbones
 - [x] VOC2012 dataset
 - [x] More models including Unet-like Resnet based AutoEncoder ...
-- [ ] More backbones including scSE-ResneXt101, Xception and Mobile net
+- [ ] More backbones including SE-ResneXt101, Xception and Mobile net
 - [ ] Deformable CNN
-- [ ] More datasets including some medical datasets, eg, COCO
+- [ ] More datasets, eg, COCO
 
 ## Results untill now
 Now I had done the experiments on deeplabv3+ and pspnet (one can get the training log under [ckpt](https://github.com/silkylove/Pytorch-ImageSegmentation/tree/master/checkpoints/)):
