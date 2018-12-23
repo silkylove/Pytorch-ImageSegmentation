@@ -152,8 +152,8 @@ if __name__ == '__main__':
     from torchsummary import summary
 
     deeplabv3_ = DeepLabv3_plus(in_channels=3, num_classes=21, backend='mobilenet_v2', os=16).cuda()
-    print(summary(deeplabv3_, [3, 513, 513]))
+    print(summary(deeplabv3_, [3, 512, 512]))
     print('Total params: ', sum(p.numel() for p in deeplabv3_.parameters() if p.requires_grad))
-    x = torch.randn(2, 3, 513, 513)
+    x = torch.randn(2, 3, 512, 512)
     out = deeplabv3_(x.cuda())
     print(out.size())

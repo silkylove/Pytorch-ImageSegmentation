@@ -1,0 +1,65 @@
+{
+    "model_params": {
+        "unet": {
+            "filter_scale": 1
+        },
+        "unet_ae": {
+            "backend": "resnet101",
+            "pretrained": "imagenet"
+        },
+        "dlv3plus": {
+            "backend": "mobilenet_v2",
+            "os": 16,
+            "pretrained": "imagenet"
+        },
+        "pspnet": {
+            "backend": "resnet101",
+            "pool_scales": [
+                1,
+                2,
+                3,
+                6
+            ],
+            "pretrained": "imagenet"
+        }
+    },
+    "loss_params": {
+        "ce": {
+            "weight": null,
+            "ignore_index": 255
+        },
+        "dice": {
+            "smooth": 1
+        },
+        "focal": {
+            "weight": null,
+            "gamma": 2,
+            "alpha": 0.5
+        },
+        "lovasz": {
+            "multiclasses": true
+        }
+    },
+    "model": "dlv3plus",
+    "loss": "ce",
+    "lr": 0.01,
+    "max_iters": 30000,
+    "epochs": null,
+    "batch_size": 16,
+    "distributed": true,
+    "gpuid": "0,1,2,3",
+    "num_workers": 16,
+    "ckpt_dir": "./checkpoints/voc2012-dlv3plus-mobilenet-ce-512",
+    "resume": false,
+    "train_image_size": 512,
+    "val_image_size": [
+        512,
+        512
+    ],
+    "in_channels": 3,
+    "data_type": "voc2012",
+    "image_root": "/home/yhuangcc/data/VOC2012/",
+    "train_list": "/home/yhuangcc/data/VOC2012/list/train_aug.txt",
+    "val_list": "/home/yhuangcc/data/VOC2012/list/val.txt",
+    "label_file": "/home/yhuangcc/ImageSegmentation/datasets/voc/labels"
+}

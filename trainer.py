@@ -68,7 +68,7 @@ class Trainer(object):
 
     def train_and_val(self):
         for epoch in range(self.start_epoch, self.epochs):
-            logger.info(f"Epoch :{epoch}")
+            logger.info(f"Epoch :[{epoch}/{self.epochs}]")
             self.train(epoch)
             logger.info(f"val starts...")
             val_miou, val_cls_iou = self.val(epoch)

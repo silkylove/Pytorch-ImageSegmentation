@@ -1,4 +1,5 @@
 # -*- coding: utf-8 -*-
+# Thanks to https://github.com/tonylins/pytorch-mobilenet-v2
 import torch
 import torch.nn as nn
 import math
@@ -176,7 +177,7 @@ def mobilenet_v2(pretrained=False, output_stride=None, **kwargs):
 if __name__ == "__main__":
     from torchsummary import summary
 
-    model = MobileNetV2(pretrained=True, output_stride=16)
+    model = MobileNetV2(pretrained=True, output_stride=None)
     model.eval()
     device = torch.device('cuda' if torch.cuda.is_available() else 'cpu')
     model = model.to(device)
